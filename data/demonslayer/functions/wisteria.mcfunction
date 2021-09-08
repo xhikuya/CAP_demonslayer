@@ -3,5 +3,5 @@ data merge entity @e[tag=death_message,limit=1] {CustomName:'{"text": "died of w
 scoreboard players add @s ds_wist_tick 1
 scoreboard players add @s[scores={ds_wist_tick=10..}] dmg 60
 scoreboard players set @s[scores={ds_wist_tick=10..}] ds_wist_tick 0
-
+scoreboard players remove @s[scores={ds_wisteria=1..}] ds_wisteria 1
 particle dust 0.976 0.714 1 1 ~ ~ ~ 0.1 1 0.1 0 10 normal
