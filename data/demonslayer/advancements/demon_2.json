@@ -1,0 +1,35 @@
+{
+    "requirements": [
+        
+    ],
+    "criteria": {
+        "hi":{
+            "trigger": "consume_item",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2
+                        }
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "nbt": "{Tags:[\"demon_boost\"]}"
+                        }
+                    }
+                ],
+                "item": {
+                    "nbt": "{Muzan:1b}"
+                }
+                
+            }
+        }
+    },
+    "rewards": {
+        "function": "demonslayer:blood_used"
+    }
+}

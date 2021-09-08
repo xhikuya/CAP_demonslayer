@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spider_eye",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "title": "Blood 50",
+        "description": "Get 50 Blood",
+        "announce_to_chat": false,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:demon/blood_45_um",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2,
+                            "ds_blood":{
+                                "min": 50
+                            }
+                            
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 40
+    }
+}

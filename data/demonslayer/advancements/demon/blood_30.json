@@ -1,0 +1,38 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:redstone",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "title": "30 Blood",
+        "description": "Get 30 Blood",
+        "announce_to_chat": false,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:demon/blood_25_lm",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2,
+                            "ds_blood":{
+                                "min": 30
+                            }
+                            
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 10
+    }
+}

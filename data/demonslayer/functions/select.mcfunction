@@ -1,0 +1,1 @@
+tellraw @s [{"text": "[Demon Slayer]","color": "dark_red","clickEvent": {"action":"run_command","value": "/trigger ability set 2"}}]

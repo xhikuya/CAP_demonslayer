@@ -1,0 +1,54 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_sword",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "title": {"text": "Refinery V","color": "aqua"},
+        "description": "get Control 60",
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:slayer/refinery_4",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2
+                        }
+                    },
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "stat_control":{
+                                "min":60
+                            }
+                        }
+                    },
+                    {
+                        "condition":"minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "player": {
+                                "advancements": {
+                                    "demonslayer:water_breathing":true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

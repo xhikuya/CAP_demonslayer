@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_horse_armor",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "title": "40 Defense",
+        "description": "Get 40 Defense",
+        "announce_to_chat": false,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:defense/35_def",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "stat_def":{
+                                "min": 40
+                            },
+                            "ability":2
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 10
+    }
+}

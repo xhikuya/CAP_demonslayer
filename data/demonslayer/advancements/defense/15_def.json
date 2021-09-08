@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_horse_armor"
+        },
+        "title": "15 Defense",
+        "description": "Get 15 Defense",
+        "announce_to_chat": false,
+        "hidden": false,
+        "frame": "goal",
+        "show_toast": true
+    },
+    "parent": "demonslayer:defense/10_def",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "stat_def":{
+                                "min": 15
+                            },
+                            "ability":2
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 10
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:totem_of_undying",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "title": "Demon Slayer Mark",
+        "description": "Get 45 Defense",
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:defense/40_def",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "stat_def":{
+                                "min": 45
+                            },
+                            "ability":2
+                        }
+                    },
+                    {
+                        "entity":"this",
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[\"demon_boost\"]}"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

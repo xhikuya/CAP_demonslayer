@@ -1,0 +1,51 @@
+{
+    "display": {
+        "icon": {
+            "item": "player_head",
+            "nbt": "{Enchantments:[{}],SkullOwner:{Id:[I;1000,1000,1000,1000],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYwMTk4NDQwMjUzNiwKICAicHJvZmlsZUlkIiA6ICIwMTVmMmFiYWYyNjE0NjhkYjI5MjI4Y2Q4MTZmNmEwNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJ4aGlrdXlhIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJmZmJiOGU1ZDlmNjZmMzRkMDQyNjU5NGYzMjQ4NjliNDUzNThmNWY0ZDY1Zjc3MTI3ODQ1OGFiMWQxNmIyMjYiCiAgICB9CiAgfQp9\"}]}}}"
+        },
+        "title": "Demon",
+        "description": "Become a demon",
+        "announce_to_chat": false,
+        "hidden": true,
+        "frame": "challenge",
+        "show_toast": false
+    },
+    "parent": "demonslayer:root",
+    "requirements": [
+        
+    ],
+    "criteria": {
+        "hi":{
+            "trigger": "consume_item",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2
+                        }
+                    },
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                            "nbt": "{Tags:[\"demon_boost\"]}"
+                        }
+                        }
+                    }
+                ],
+                "item": {
+                    "nbt": "{Muzan:1b}"
+                }
+                
+            }
+        }
+    },
+    "rewards": {
+        "function": "demonslayer:demon_turned"
+    }
+}

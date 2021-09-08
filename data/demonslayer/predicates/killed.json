@@ -1,0 +1,23 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "ds_kill":{
+                    "min": 1
+                }
+            }
+        },
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "ds_kill2":{
+                    "min": 1
+                }
+            }
+        }
+    ]
+}

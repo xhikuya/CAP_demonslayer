@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ender_eye",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "title": [
+            {
+                "text": "Upper rank 1",
+                "color": "dark_red"
+            }
+        ],
+        "description": "75 Blood.",
+        "announce_to_chat": false,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:demon/blood_50",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2,
+                            "ds_blood":{
+                                "min": 75
+                            }
+                            
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 40
+    }
+}

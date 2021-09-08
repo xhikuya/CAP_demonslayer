@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "item": "netherite_sword"
+        },
+        "title": "Demon Slayer",
+        "description": "Advancements for the demon slayer add-on",
+        "announce_to_chat": false,
+        "hidden": true,
+        "frame": "goal",
+        "background": "minecraft:textures/block/red_stained_glass.png",
+        "show_toast": false
+    },
+    "requirements": [
+        
+    ],
+    "criteria": {
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2
+                        }
+                    }
+                ]
+                
+            }
+        }
+    }
+}

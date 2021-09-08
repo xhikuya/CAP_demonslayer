@@ -1,0 +1,44 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spider_eye",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "title": "Upper Rank",
+        "description": "Get 45 Defense",
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:defense/40_def",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "stat_def":{
+                                "min": 45
+                            },
+                            "ability":2
+                        }
+                    },
+                    {
+                        "entity":"this",
+                        "condition":"entity_properties",
+                        "predicate": {
+                            "nbt": "{Tags:[\"demon_boost\"]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

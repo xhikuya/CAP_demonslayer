@@ -1,0 +1,12 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "tag": "demonslayer:swords",
+                "nbt": "{Cap:{Waterbreathing:1b}}"
+            }
+        }
+    }
+}
