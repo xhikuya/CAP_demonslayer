@@ -23,7 +23,7 @@ execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{FireBreathing:1b
 execute as @e[tag=ds_slayer] at @s run function demonslayer:ai/tanjiro/tick
 execute as @e[tag=ds_demon] at @s run function demonslayer:ai/demon/tick
 
-scoreboard players add @a ds_formtime 0
+scoreboard players add @a ds_formtime 1
 scoreboard players remove @a[scores={ds_formtime=1..}] ds_formtime 1
 scoreboard players add @a ds_cooldown 0
 scoreboard players remove @a[scores={ds_cooldown=1..}] ds_cooldown 1
