@@ -1,0 +1,16 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "location_check",
+            "offsetX": 1,
+            "predicate": {
+                "block": {
+                    "blocks": [
+                        "lilac"
+                    ]
+                }
+            }
+        }
+    ]
+}

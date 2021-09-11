@@ -30,6 +30,6 @@
         }
     },
     "rewards": {
-        "function": "demonslayer:blood_used"
+        "function": "demonslayer:demon/blood_used"
     }
 }

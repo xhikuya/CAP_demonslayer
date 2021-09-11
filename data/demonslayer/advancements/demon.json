@@ -46,6 +46,6 @@
         }
     },
     "rewards": {
-        "function": "demonslayer:demon_turned"
+        "function": "demonslayer:demon/demon_turned"
     }
 }

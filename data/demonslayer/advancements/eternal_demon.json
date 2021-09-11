@@ -22,6 +22,6 @@
         }
     },
     "rewards": {
-        "function": "demonslayer:eternal_demon"
+        "function": "demonslayer:demon/eternal_demon"
     }
 }

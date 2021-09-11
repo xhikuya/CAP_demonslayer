@@ -8,10 +8,11 @@ execute if entity @s[scores={ds_bloodxp=200..}] run scoreboard players set @s ds
 
 execute at @s if predicate demonslayer:skylight unless predicate demonslayer:time_check unless predicate demonslayer:raining run function demonslayer:sun
 execute at @s if block ~ ~ ~ lilac run scoreboard players add @s ds_wisteria 1
-execute at @s if block ~ ~ ~ lilac run scoreboard players add @s ds_wist_tick 3
-
-
+scoreboard players set @s[scores={ds_wisteria=0}] ds_wist_tick 0
+execute at @s[scores={ds_wist_tick=0}] if block ~ ~ ~ lilac run scoreboard players add @s ds_wist_tick 10
 execute as @s[scores={ds_wisteria=1..}] at @s run function demonslayer:wisteria
+
+execute as @s[predicate=core:sneak,scores={ds_cooldown=0},nbt={SelectedItemSlot:8}] run function d
 
 #>atk
 execute if entity @s[predicate=core:atked,scores={stamina=3..}] run scoreboard players add @s stamina_cool 20

@@ -1,0 +1,54 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_sword",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "title": {"text": "Refinery VI","color": "light_purple"},
+        "description": "get Control 80",
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:slayer/refinery_5",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2
+                        }
+                    },
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "stat_control":{
+                                "min":80
+                            }
+                        }
+                    },
+                    {
+                        "condition":"minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "player": {
+                                "advancements": {
+                                    "demonslayer:water_breathing":true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}
