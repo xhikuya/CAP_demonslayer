@@ -19,7 +19,6 @@ execute as @a[scores={stat_control=6..},predicate=demonslayer:firebreathing] at 
 execute as @a[predicate=!demonslayer:firebreathing] run clear @s carrot_on_a_stick{FireBreathing:1b}
 execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{FireBreathing:1b}}]}] run clear @s carrot_on_a_stick{FireBreathing:1b}
 
-#execute as @a[nbt={Inventory:[{tag:{WaterBreathing:1b}}]}] run function demonslayer:breathing/water_clear
 execute as @e[tag=ds_slayer] at @s run function demonslayer:ai/tanjiro/tick
 execute as @e[tag=ds_demon] at @s run function demonslayer:ai/demon/tick
 
