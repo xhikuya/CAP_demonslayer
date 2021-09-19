@@ -1,4 +1,5 @@
 {
+    "parent": "demonslayer:root",
     "requirements": [
         
     ],
@@ -15,10 +16,13 @@
                         }
                     },
                     {
-                        "condition": "entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                        "nbt": "{Tags:[\"demon_boost\"]}"
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                            "nbt": "{Tags:[\"demon_boost\"]}"
+                        }
                         }
                     }
                 ],
@@ -30,6 +34,6 @@
         }
     },
     "rewards": {
-        "function": "demonslayer:blood_used"
+        "function": "demonslayer:demon/demon_turned"
     }
 }

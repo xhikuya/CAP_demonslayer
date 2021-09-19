@@ -11,6 +11,7 @@ execute if entity @s[tag=eternal,scores={ds_blood=..-1}] run scoreboard players 
 execute at @s[tag=eternal] unless data entity @s SpawnX run spreadplayers ~ ~ 1 100 under 50 true @s
 execute at @s[tag=eternal] unless data entity @s SpawnX run spawnpoint @s
 effect give @s instant_health 40 2
+execute as @s[tag=!eternal,tag=demon_boost] run function demonslayer:demon/turn_demon_human
 tag @s[tag=!eternal] remove demon_boost
 scoreboard players reset @s ds_death
 

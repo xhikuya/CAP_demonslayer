@@ -4,8 +4,8 @@ execute if entity @s[predicate=demonslayer:sword,nbt=!{HurtTime:0s},predicate=co
 
 
 
-execute if entity @s[predicate=core:atked,predicate=demonslayer:sword,scores={stat_control=2..,stamina=2..}] run scoreboard players add @s stamina_cool 10
-execute if entity @s[predicate=core:atked,predicate=demonslayer:sword,scores={stat_control=2..,stamina=2..}] run scoreboard players remove @s stamina 3
+execute if entity @s[predicate=core:atked,predicate=demonslayer:sword,scores={stat_control=5..,stamina=2..}] run scoreboard players add @s stamina_cool 10
+execute if entity @s[predicate=core:atked,predicate=demonslayer:sword,scores={stat_control=5..,stamina=2..}] run scoreboard players remove @s stamina 3
 execute if entity @s[predicate=core:atked,predicate=demonslayer:sword,scores={stamina_cool=10..20,stamina=..0}] run scoreboard players add @s xp_stamina 1
 execute if entity @s[predicate=core:atked,predicate=demonslayer:sword,scores={stamina_cool=10..20,stamina=..0}] run scoreboard players add @s stamina_cool 200
 

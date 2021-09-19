@@ -3,6 +3,7 @@ scoreboard players remove @s max_stamina 60
 scoreboard players remove @s stat_power 2
 scoreboard players remove @s stat_control 2
 scoreboard players remove @s stat_def 5
+scoreboard players remove @s ds_blood 2
 
 
 #>Remove Control
@@ -73,5 +74,5 @@ attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e7
 
 attribute @s generic.max_health modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f96ffc
  attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f96ffc
-advancement revoke @s through demonslayer:demon/blood_5
+advancement revoke @s from demonslayer:demon/blood_5
 

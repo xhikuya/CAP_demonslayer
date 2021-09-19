@@ -6,10 +6,10 @@
         },
         "title": "Demon",
         "description": "Become a demon",
-        "announce_to_chat": false,
+        "announce_to_chat": true,
         "hidden": true,
         "frame": "challenge",
-        "show_toast": false
+        "show_toast": true
     },
     "parent": "demonslayer:root",
     "requirements": [
@@ -17,35 +17,7 @@
     ],
     "criteria": {
         "hi":{
-            "trigger": "consume_item",
-            "conditions": {
-                "player": [
-                    {
-                        "entity": "this",
-                        "condition": "entity_scores",
-                        "scores": {
-                            "ability":2
-                        }
-                    },
-                    {
-                        "condition": "inverted",
-                        "term": {
-                            "condition": "entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                            "nbt": "{Tags:[\"demon_boost\"]}"
-                        }
-                        }
-                    }
-                ],
-                "item": {
-                    "nbt": "{Muzan:1b}"
-                }
-                
-            }
+            "trigger": "impossible"
         }
-    },
-    "rewards": {
-        "function": "demonslayer:demon/demon_turned"
     }
 }

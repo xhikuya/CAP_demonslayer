@@ -13,7 +13,7 @@ execute as @a[predicate=demonslayer:firebreathing,nbt={Inventory:[{Slot:-106b,ta
 
 execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{WaterBreathing:1b}}]}] run clear @s carrot_on_a_stick{WaterBreathing:1b}
 
-execute as @a[scores={stat_control=3..},predicate=demonslayer:waterbreathing,predicate=!demonslayer:firebreathing] at @s run function demonslayer:breathing/water 
+execute as @a[scores={stat_control=6..},predicate=demonslayer:waterbreathing,predicate=!demonslayer:firebreathing] at @s run function demonslayer:breathing/water 
 
 execute as @a[scores={stat_control=6..},predicate=demonslayer:firebreathing] at @s run function demonslayer:breathing/fire 
 execute as @a[predicate=!demonslayer:firebreathing] run clear @s carrot_on_a_stick{FireBreathing:1b}
