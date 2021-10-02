@@ -6,7 +6,7 @@
         },
         "title": "Lower Moon",
         "description": "Get 25 Blood",
-        "announce_to_chat": false,
+        "announce_to_chat": true,
         "hidden": false,
         "frame": "challenge",
         "show_toast": true

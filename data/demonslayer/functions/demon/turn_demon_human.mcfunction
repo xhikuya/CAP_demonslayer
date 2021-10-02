@@ -38,18 +38,17 @@ scoreboard players set @s ds_bloodxp 0
 
 attribute @s generic.max_health modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f9632b
 attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963b
-
+effect clear @s
 execute if entity @s[advancements={demonslayer:demon/blood_5=true}] run attribute @s generic.max_health modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963c
 execute if entity @s[advancements={demonslayer:demon/blood_5=true}] run attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963
 execute if entity @s[advancements={demonslayer:demon/blood_10=true}] run attribute @s generic.max_health modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963d
 execute if entity @s[advancements={demonslayer:demon/blood_10=true}] run attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963d
-execute if entity @s[advancements={demonslayer:demon/blood_10=true}] run effect give @s jump_boost 1 1 true
-execute if entity @s[advancements={demonslayer:demon/blood_10=true}] run effect give @s speed 1 1 true
+
 execute if entity @s[advancements={demonslayer:demon/blood_15=true}] run attribute @s generic.max_health modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963e
 execute if entity @s[advancements={demonslayer:demon/blood_15=true}] run attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963e
 execute if entity @s[advancements={demonslayer:demon/blood_20=true}] run attribute @s generic.max_health modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963f
 execute if entity @s[advancements={demonslayer:demon/blood_20=true}] run attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963f
-execute if entity @s[advancements={demonslayer:demon/blood_20=true}] run effect give @s speed 1 2 true
+
 execute if entity @s[advancements={demonslayer:demon/blood_25_lm=true}] run attribute @s generic.max_health modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963fa
 execute if entity @s[advancements={demonslayer:demon/blood_25_lm=true}] run attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f963fa
 
@@ -73,6 +72,10 @@ attribute @s generic.max_health modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f9
 attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f96ffb
 
 attribute @s generic.max_health modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f96ffc
- attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f96ffc
-advancement revoke @s from demonslayer:demon/blood_5
+attribute @s generic.attack_damage modifier remove 4d2ba4c6-f7bd-4390-ba6b-ca9e75f96ffc
 
+scoreboard players set @s[scores={stat_control=..0}] stat_control 0
+scoreboard players set @s[scores={stat_stamina=..0}] stat_stamina 0
+scoreboard players set @s[scores={stat_def=..0}] stat_def 0
+scoreboard players set @s[scores={stat_power=..0}] stat_power 0
+scoreboard players set @s[scores={max_stamina=..0}] max_stamina 50

@@ -6,7 +6,7 @@
         },
         "title": "Upper Moon",
         "description": "Get 45 Blood",
-        "announce_to_chat": false,
+        "announce_to_chat": true,
         "hidden": false,
         "frame": "challenge",
         "show_toast": true

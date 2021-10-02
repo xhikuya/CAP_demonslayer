@@ -1,0 +1,21 @@
+[{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "player": {
+            "advancements": {
+                "demonslayer:demon/blood_50":true
+            }
+        }
+    }
+},
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "ds_blood":{
+            "min":50
+        }
+    }
+}
+]
