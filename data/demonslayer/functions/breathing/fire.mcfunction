@@ -18,5 +18,10 @@ execute if predicate core:click if score @s[scores={stamina=..2,ds_cooldown=0,ds
 execute if predicate core:click if score @s[scores={stamina=3..,ds_cooldown=0,ds_formtime=0}] ds_fireform matches 1 run function demonslayer:breathing/fire/dance_init
 execute if predicate core:click if score @s[scores={stamina=..10,ds_cooldown=0}] ds_fireform matches 2 run tellraw @s "Too Tired"
 execute if predicate core:click if score @s[scores={stamina=11..,ds_cooldown=0}] ds_fireform matches 2 run function demonslayer:breathing/fire/blue_sky/init
+execute if predicate core:click if score @s[scores={stamina=..6,ds_cooldown=0}] ds_fireform matches 3 run tellraw @s "Too Tired"
+execute if predicate core:click if score @s[scores={stamina=7..,ds_cooldown=0}] ds_fireform matches 3 run function demonslayer:breathing/fire/2nd_ragingsun/init
+
+
 execute as @s[scores={ds_fireform=1,ds_formtime=1..}] at @s run function demonslayer:breathing/fire/dance
+execute as @s[scores={ds_fireform=3,ds_formtime=1..}] at @s run function demonslayer:breathing/fire/2nd_ragingsun/main
 
