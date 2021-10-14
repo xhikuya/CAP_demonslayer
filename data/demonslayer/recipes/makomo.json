@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+      " # ",
+      "BA#",
+      "CB "
+    ],
+    "key":
+    {
+      "#":
+      {
+        "item": "minecraft:white_dye"
+      },
+      "A":
+      {
+        "item": "minecraft:iron_helmet"
+      },
+      "B":
+      {
+        "item": "minecraft:light_blue_dye"
+      },
+      "C":
+      {
+        "item": "minecraft:yellow_dye"
+      }
+
+    },
+    "result":
+    {
+      "item": "minecraft:knowledge_book",
+      "count": 1
+    }
+  }

@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "HI":{
+            "trigger": "recipe_unlocked",
+            "conditions":{
+                "recipe": "demonslayer:makomo"
+            }
+        }
+    },
+    "rewards": {
+        "function": "demonslayer:mask/craft/makomo"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "HI":{
+            "trigger": "recipe_unlocked",
+            "conditions":{
+                "recipe": "demonslayer:tanjiro"
+            }
+        }
+    },
+    "rewards": {
+        "function": "demonslayer:mask/craft/tanjiro"
+    }
+}

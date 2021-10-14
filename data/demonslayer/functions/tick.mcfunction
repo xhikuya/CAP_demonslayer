@@ -33,3 +33,4 @@ scoreboard players set @a[scores={ds_kill2=1..}] ds_kill2 0
 scoreboard players add @a[scores={ds_wist_break=1..},tag=demon_boost] ds_wisteria 40
 scoreboard players set @a[scores={ds_wist_break=1..}] ds_wist_break 0
 
+execute as @a[nbt=!{Inventory:[{Slot:103b}]},predicate=demonslayer:mask] if predicate core:click run function demonslayer:mask/equip
