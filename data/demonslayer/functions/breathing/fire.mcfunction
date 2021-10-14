@@ -6,9 +6,9 @@ scoreboard players set @s[scores={ds_fireform=4..,stat_control=12..}] ds_firefor
 scoreboard players set @s[scores={ds_fireform=2..,stat_control=5..7}] ds_fireform 1
 scoreboard players set @s[scores={ds_fireform=3..,stat_control=8..11}] ds_fireform 1
 
-execute if score @s[scores={ds_swap=6..}] ds_fireform matches 1 run tellraw @s "Dance"
-execute if score @s[scores={ds_swap=6..}] ds_fireform matches 2 run tellraw @s "Clear Blue Sky"
-execute if score @s[scores={ds_swap=6..}] ds_fireform matches 3 run tellraw @s "Raging Sun"
+execute if score @s[scores={ds_swap=6..}] ds_fireform matches 1 run tellraw @s {"text": "First Form: Dance","color": "red"}
+execute if score @s[scores={ds_swap=6..}] ds_fireform matches 2 run tellraw @s {"text": "Second Form: Clear Blue Sky","color": "red"}
+execute if score @s[scores={ds_swap=6..}] ds_fireform matches 3 run tellraw @s {"text": "Third Form: Raging Sun","color": "red"}
 
 execute if score @s ds_swap matches 6.. run scoreboard players set @s ds_swap 1
 #>actual moves

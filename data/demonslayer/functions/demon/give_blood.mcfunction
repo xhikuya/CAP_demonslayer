@@ -1,0 +1,1 @@
+give @s spider_eye{display:{Name:'{"text": "Muzan Blood"}'},Muzan:1b}
