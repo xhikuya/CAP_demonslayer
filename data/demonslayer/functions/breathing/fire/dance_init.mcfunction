@@ -1,6 +1,6 @@
 scoreboard players set @s ds_formtime 0
 scoreboard players add @s[type=player] xp_power 1
-scoreboard players add @s[type=player] xp_stamina 3
+scoreboard players add @s[type=player] xp_stamina 4
 scoreboard players remove @s[type=player] stamina 5
 scoreboard players set @s ds_formtime 2
 
