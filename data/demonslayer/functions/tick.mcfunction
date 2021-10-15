@@ -33,6 +33,6 @@ scoreboard players set @a[scores={ds_kill2=1..}] ds_kill2 0
 scoreboard players add @a[scores={ds_wist_break=1..},tag=demon_boost] ds_wisteria 40
 scoreboard players set @a[scores={ds_wist_break=1..}] ds_wist_break 0
 
-
-
+execute as @e[type=zombie,tag=!custom,tag=!ds_checked] if predicate demonslayer:demonspawn_chance at @s unless entity @a[distance=..25] run function demonslayer:demon/spawn
+execute as @e[type=zombie,tag=!custom,tag=!ds_checked] run tag @s add ds_checked
 execute as @a[nbt=!{Inventory:[{Slot:103b}]},predicate=demonslayer:mask] if predicate core:click run function demonslayer:mask/equip

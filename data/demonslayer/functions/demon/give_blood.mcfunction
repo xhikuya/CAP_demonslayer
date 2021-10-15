@@ -1,1 +1,1 @@
-give @s spider_eye{display:{Name:'{"text": "Muzan Blood"}'},Muzan:1b}
+give @s spider_eye{display:{Name:'{"text": "Muzan Blood","italic": false}'},Muzan:1b}
