@@ -18,6 +18,7 @@ execute as @s[scores={ds_waterform=1,ds_formtime=2..}] at @s rotated ~ 0 positio
 execute as @s[scores={ds_waterform=1,ds_formtime=1}] at @s rotated ~ 0 run function demonslayer:ai/tanjiro/breathing/surface_slash
 
 execute as @s[scores={ds_waterform=2,ds_formtime=2}] at @s rotated ~ 0 run function demonslayer:ai/tanjiro/breathing/wheel_2
+execute as @s[scores={ds_waterform=6,ds_formtime=1..}] at @s rotated ~ 0 run function demonslayer:ai/tanjiro/breathing/whirlpool/main
 
 effect give @s[scores={ds_var2=0}] weakness 10 2 true
 effect give @s[scores={ds_var2=0}] slowness 10 2 true

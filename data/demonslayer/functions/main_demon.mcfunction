@@ -1,7 +1,7 @@
 scoreboard players remove @a[scores={ds_sleepcool=1..}] ds_sleepcool 1
 execute at @s if predicate core:sneak if block ~ ~ ~ #beds unless score @s ds_sleepcool matches 1.. run function demonslayer:demon/time_progress
 
-execute if entity @s[predicate=demonslayer:killed] run scoreboard players add @s ds_bloodxp 2
+execute if entity @s[predicate=demonslayer:killed] run scoreboard players add @s ds_bloodxp 4
 execute if entity @s[scores={ds_bloodxp=200..}] run scoreboard players add @s xp_control 8
 execute if entity @s[scores={ds_bloodxp=200..}] run scoreboard players add @s xp_power 16
 execute if entity @s[scores={ds_bloodxp=200..}] run scoreboard players add @s xp_stamina 20
@@ -9,7 +9,7 @@ execute if entity @s[scores={ds_bloodxp=200..}] run scoreboard players add @s xp
 execute if entity @s[scores={ds_bloodxp=200..}] run scoreboard players add @s ds_blood 1
 execute if entity @s[scores={ds_bloodxp=200..}] run scoreboard players set @s ds_bloodxp 0
 
-execute at @s if predicate demonslayer:skylight unless predicate demonslayer:time_check unless predicate demonslayer:raining run function demonslayer:demon/sun
+execute at @s if predicate demonslayer:skylight unless predicate demonslayer:time_check unless predicate demonslayer:raining unless predicate demonslayer:end run function demonslayer:demon/sun
 execute at @s if block ~ ~ ~ lilac run scoreboard players add @s ds_wisteria 1
 scoreboard players set @s[scores={ds_wisteria=0}] ds_wist_tick 0
 execute at @s[scores={ds_wist_tick=0}] if block ~ ~ ~ lilac run scoreboard players add @s ds_wist_tick 10

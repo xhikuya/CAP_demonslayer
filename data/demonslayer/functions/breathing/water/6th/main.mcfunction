@@ -34,5 +34,7 @@ execute if score @s ds_formtime matches 34 rotated ~380 0 positioned ^ ^2.3 ^2 r
 execute if score @s ds_formtime matches 33 rotated ~395 0 positioned ^ ^2.4 ^2 run function demonslayer:breathing/water/6th/slash
 execute if score @s ds_formtime matches 33 rotated ~410 0 positioned ^ ^2.4 ^2 run function demonslayer:breathing/water/6th/slash
 execute if score @s ds_formtime matches 33 run scoreboard players set @s ds_cooldown 50
+execute if score @s ds_formtime matches 33 run attribute @s generic.movement_speed modifier remove 0ffbf497-1acc-4ded-92a6-c8662e7af3fc
 execute if score @s ds_formtime matches 33 run scoreboard players set @s ds_formtime 0
+
 
