@@ -1,0 +1,27 @@
+{
+    "requirements": [
+    ],
+    "criteria": {
+        "hi":{
+            "trigger": "consume_item",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2
+                        }
+                    }
+                ],
+                "item": {
+                    "nbt": "{CustomModelData:40004}"
+                }
+                
+            }
+        }
+    },
+    "rewards": {
+        "function": "demonslayer:eat_villager"
+    }
+}
