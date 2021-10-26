@@ -1,0 +1,1 @@
+execute if data entity @s SelectedItem.tag{Cap:{ID:1b}} at @s run function demonslayer:demon/bda/nezuko/main

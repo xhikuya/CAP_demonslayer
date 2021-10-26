@@ -1,4 +1,4 @@
-execute unless entity @s[nbt={Inventory:[{Slot:-106b}]}] run item replace entity @s weapon.offhand with carrot_on_a_stick{FireBreathing:1b}
+execute unless entity @s[nbt={Inventory:[{Slot:-106b}]}] run item replace entity @s weapon.offhand with carrot_on_a_stick{FireBreathing:1b,CustomModelData:1}
 
 execute if entity @s[predicate=core:sneak] run scoreboard players add @s ds_swap 1
 execute if score @s ds_swap matches 6.. run scoreboard players add @s[scores={ds_formtime=0}] ds_fireform 1

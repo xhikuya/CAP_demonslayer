@@ -8,6 +8,7 @@ scoreboard objectives add ds_sleepcool dummy
 
 scoreboard objectives add ds_waterform dummy
 scoreboard objectives add ds_fireform dummy
+scoreboard objectives add ds_bdamove dummy
 
 
 scoreboard objectives add ds_cooldown dummy
