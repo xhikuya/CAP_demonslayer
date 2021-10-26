@@ -2,7 +2,7 @@ execute as @a[tag=started] run function demonslayer:select
 execute as @a[tag=selected_ability,scores={ability=2}] run function demonslayer:selected
 execute as @a[scores={ds_racechoice=1..},tag=!racechosen] run function demonslayer:racechoice
 
-execute as @a[scores={ability=2,stat_power=13..}] run scoreboard players remove @s stat_power 1
+#execute as @a[scores={ability=2,stat_power=13..}] run scoreboard players remove @s stat_power 1
 
 execute as @a[scores={ds_death=1..,ability=2}] at @s run function demonslayer:dead
 execute as @a[scores={ability=2},tag=!demon_boost] run function demonslayer:main_slayer

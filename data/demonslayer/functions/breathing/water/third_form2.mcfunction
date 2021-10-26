@@ -4,7 +4,7 @@ scoreboard players remove @s stamina 20
 scoreboard players add @s stamina_cool 100
 
 scoreboard players add @s xp_stamina 2
-scoreboard players add @s xp_power 1
+scoreboard players add @s xp_power 2
 scoreboard players add @s xp_control 1
 
 

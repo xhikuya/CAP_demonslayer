@@ -4,8 +4,8 @@
             "item": "minecraft:iron_horse_armor",
             "nbt": "{Enchantments:[{}]}"
         },
-        "title": "25 Defense",
-        "description": "Get 25 Defense",
+        "title": "30 Defense",
+        "description": "Get 30 Defense",
         "announce_to_chat": false,
         "hidden": false,
         "frame": "challenge",
