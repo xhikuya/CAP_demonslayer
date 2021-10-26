@@ -27,3 +27,4 @@ scoreboard players remove @s[scores={ds_formtime=1..}] ds_formtime 1
 scoreboard players remove @s[scores={ds_cooldown=1..}] ds_cooldown 1
 
 execute if block ~ ~0.5 ~ water run tp @s ~ ~0.01 ~
+execute if predicate core:dmg run function demonslayer:dmg_reduction

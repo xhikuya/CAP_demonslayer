@@ -20,8 +20,6 @@ execute as @a[tag=demon_boost,predicate=demonslayer:blooddemonart] at @s run fun
 execute as @e[tag=ds_slayer] at @s run function demonslayer:ai/tanjiro/tick
 execute as @e[tag=ds_demon] at @s run function demonslayer:ai/demon/tick
 
-execute as @a[predicate=core:dmg] run say hi
-
 scoreboard players add @a ds_formtime 0
 scoreboard players remove @a[scores={ds_formtime=1..}] ds_formtime 1
 scoreboard players add @a ds_cooldown 0
