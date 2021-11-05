@@ -2,7 +2,6 @@ execute if entity @s[predicate=core:atked,predicate=demonslayer:sword] run score
 execute if entity @s[predicate=demonslayer:sword,nbt={HurtTime:10s}] run scoreboard players add @s xp_def 2
 execute if entity @s[predicate=demonslayer:sword,nbt=!{HurtTime:0s},predicate=core:atked_full] run playsound item.shield.break player @s
 
-execute if predicate core:dmg run function demonslayer:dmg_reduction
 
 execute if entity @s[predicate=core:atked,predicate=demonslayer:sword,scores={stat_control=5..,stamina=2..}] run scoreboard players add @s stamina_cool 10
 execute if entity @s[predicate=core:atked,predicate=demonslayer:sword,scores={stat_control=5..,stamina=2..}] run scoreboard players remove @s stamina 3

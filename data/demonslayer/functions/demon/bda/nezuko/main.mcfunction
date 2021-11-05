@@ -7,5 +7,5 @@ execute if score @s ds_swap matches 6.. run scoreboard players set @s ds_swap 1
 #> Actual moves
 execute if predicate core:atked run function demonslayer:demon/bda/nezuko/slash
 
-execute if predicate core:click unless score @s[scores={stamina=10..,ds_cooldown=0,ds_formtime=0}] ds_bdamove matches 1 run tellraw @s "Too Tired"
-execute if predicate core:click if score @s[scores={stamina=10..,ds_cooldown=0,ds_formtime=0}] ds_bdamove matches 1 run function demonslayer:demon/bda/nezuko/exploding/exploding
+execute if predicate core:click unless score @s[scores={stamina=20..,ds_cooldown=0,ds_formtime=0}] ds_bdamove matches 1 run tellraw @s "Too Tired"
+execute if predicate core:click if score @s[scores={stamina=20..,ds_cooldown=0,ds_formtime=0}] ds_bdamove matches 1 run function demonslayer:demon/bda/nezuko/exploding/exploding

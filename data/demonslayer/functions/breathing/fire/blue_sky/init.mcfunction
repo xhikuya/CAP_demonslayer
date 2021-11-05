@@ -9,7 +9,7 @@ playsound entity.player.attack.sweep player @a ~ ~ ~
 
 playsound entity.player.attack.sweep player @a ~ ~ ~ 1 1.5
 playsound entity.player.attack.sweep player @a ~ ~ ~ 1 1.8
-
+playsound item.firecharge.use player @a ~ ~ ~
 execute rotated ~ 0 positioned ~ ~1.2 ~ run function demonslayer:breathing/fire/blue_sky/particle
 function demonslayer:breathing/fire/dmg
 tag @s add immune

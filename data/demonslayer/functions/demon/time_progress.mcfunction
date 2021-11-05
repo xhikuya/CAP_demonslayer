@@ -1,4 +1,4 @@
-time add 480s
+time add 240s
 tellraw @s {"text": "you progressed time a little.."}
-scoreboard players set @s ds_sleepcool 4000
+scoreboard players set @s ds_sleepcool 2000
 

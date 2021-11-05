@@ -1,16 +1,17 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:netherite_sword"
+            "item": "minecraft:trident",
+            "nbt": "{Enchantments:[{}]}"
         },
-        "title": {"text": "Refinery VI","color": "light_purple"},
-        "description": "get Control 70",
+        "title": {"text": "Refinery VIII","color": "light_purple"},
+        "description": "get Control 90",
         "announce_to_chat": true,
         "hidden": false,
         "frame": "challenge",
         "show_toast": true
     },
-    "parent": "demonslayer:slayer/refinery_5",
+    "parent": "demonslayer:slayer/refinery_7",
     "criteria":{
         "hi":{
             "trigger": "tick",
@@ -28,7 +29,7 @@
                         "condition": "entity_scores",
                         "scores": {
                             "stat_control":{
-                                "min":70
+                                "min":90
                             }
                         }
                     },

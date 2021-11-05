@@ -7,6 +7,7 @@ scoreboard players add @s var2 0
 scoreboard players add @s var3 0
 
 scoreboard players add @s[scores={ds_cooldown=0}] var1 1
+
 scoreboard players add @s[scores={var2=..99,var3=0}] var2 1
 scoreboard players remove @s[scores={var3=1..}] var3 1
 
@@ -25,5 +26,6 @@ effect give @s[scores={ds_var2=0}] slowness 10 2 true
 
 scoreboard players remove @s[scores={ds_formtime=1..}] ds_formtime 1
 scoreboard players remove @s[scores={ds_cooldown=1..}] ds_cooldown 1
+
 
 execute if block ~ ~0.5 ~ water run tp @s ~ ~0.01 ~

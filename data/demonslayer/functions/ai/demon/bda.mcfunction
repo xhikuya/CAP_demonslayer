@@ -10,7 +10,7 @@ scoreboard players add @s var3 0
 
 execute if entity @s[tag=!ds_um,tag=!ds_um1] run scoreboard players add @s[scores={var2=..99,var3=0}] var2 1
 execute if entity @s[tag=ds_um] run scoreboard players add @s[scores={var2=..149,var3=0}] var2 1
-execute if entity @s[tag=ds_um1] run scoreboard players add @s[scores={var2=..200,var3=0}] var2 1
+execute if entity @s[tag=ds_um1] run scoreboard players add @s[scores={var2=..199,var3=0}] var2 2
 scoreboard players remove @s[scores={var3=1..}] var3 1
 
 scoreboard players set @s[scores={ds_var2=0}] var1 0 

@@ -1,7 +1,6 @@
 scoreboard players remove @a[scores={ds_sleepcool=1..}] ds_sleepcool 1
 execute at @s if predicate core:sneak if block ~ ~ ~ #beds unless score @s ds_sleepcool matches 1.. run function demonslayer:demon/time_progress
 tag @s add cdamage
-execute if predicate core:dmg run function demonslayer:dmg_reduction
 
 execute if entity @s[predicate=demonslayer:killed] run scoreboard players add @s ds_bloodxp 4
 execute if entity @s[scores={ds_bloodxp=200..}] run scoreboard players add @s xp_control 8
