@@ -2,7 +2,7 @@ scoreboard players add @s ds_cooldown 40
 scoreboard players add @s stamina_cool 40
 scoreboard players remove @s stamina 15
 scoreboard players add @s xp_def 1
-scoreboard players add @s xp_power 4
+scoreboard players add @s xp_power 5
 
 
 
