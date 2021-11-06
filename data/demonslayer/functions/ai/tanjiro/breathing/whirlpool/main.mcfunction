@@ -38,3 +38,5 @@ execute if score @s ds_formtime matches 33 run attribute @s generic.movement_spe
 execute if score @s ds_formtime matches 33 run scoreboard players set @s ds_formtime 0
 
 
+execute if entity @s[nbt={HurtTime:10s}] run playsound item.shield.break player @a ~ ~ ~
+execute if entity @s[scores={dmg=1..}] run playsound item.shield.break player @a ~ ~ ~

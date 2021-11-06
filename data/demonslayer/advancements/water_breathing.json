@@ -11,7 +11,7 @@
         "frame": "challenge",
         "show_toast": true
     },
-    "parent": "demonslayer:root",
+    "parent": "demonslayer:slayer/demons/kill_demon",
     "criteria":{
         "hi":{
             "trigger": "player_killed_entity",
@@ -44,6 +44,6 @@
     },
     "rewards": {
         "experience": 100,
-        "function": "demonslayer:learn_waterbreathing"
+        "function": "demonslayer:slayer/learn_waterbreathing"
     }
 }

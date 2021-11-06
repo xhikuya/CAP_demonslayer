@@ -1,0 +1,47 @@
+{
+    "display": {
+        "icon": {
+            "item": "rotten_flesh"
+        },
+        "title": "beginner",
+        "description": "kill 10 demons",
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "goal",
+        "show_toast": true
+    },
+    "parent": "demonslayer:slayer/demons/kill_demon",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "player": {
+                                "advancements": {
+                                    "demonslayer:root":true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "ds_demonkill":{
+                                "min":10
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 1,
+        "function": "demonslayer:slayer/beginner_achievement"
+    }
+}

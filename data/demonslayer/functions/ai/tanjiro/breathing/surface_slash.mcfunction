@@ -17,3 +17,6 @@ scoreboard players add @s ds_cooldown 100
 scoreboard players set @s ds_formtime 0
 scoreboard players add @s var3 50
 scoreboard players remove @s var2 24
+
+execute if entity @s[nbt={HurtTime:10s}] run playsound item.shield.break player @a ~ ~ ~
+execute if entity @s[scores={dmg=1..}] run playsound item.shield.break player @a ~ ~ ~

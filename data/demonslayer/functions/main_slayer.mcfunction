@@ -1,5 +1,5 @@
 execute if entity @s[predicate=core:atked,predicate=demonslayer:sword] run scoreboard players add @s xp_control 2
-execute if entity @s[predicate=demonslayer:sword,nbt={HurtTime:10s}] run scoreboard players add @s xp_def 2
+execute if entity @s[predicate=demonslayer:sword,nbt={HurtTime:9s}] run scoreboard players add @s xp_def 2
 execute if entity @s[predicate=demonslayer:sword,nbt=!{HurtTime:0s},predicate=core:atked_full] run playsound item.shield.break player @s
 
 
@@ -12,7 +12,7 @@ effect give @s[predicate=demonslayer:no_stam] slowness 4 0 true
 effect give @s[predicate=demonslayer:no_stam] weakness 1 0 true
 
 execute if score @s[scores={stat_stamina=0}] max_stamina matches 100.. run scoreboard players set @s max_stamina 50
-function demonslayer:slayer_attributes
+function demonslayer:slayer/slayer_attributes
 tag @s add cdamage
 execute if entity @s[advancements={demonslayer:defense/10_def=true}] run effect give @s resistance 1 0 true
 execute if entity @s[advancements={demonslayer:defense/20_def=true}] run effect give @s resistance 1 1 true

@@ -1,0 +1,52 @@
+{
+    "display": {
+        "icon": {
+            "item": "rotten_flesh"
+        },
+        "title": "Demon Slayer",
+        "description": "kill a demon",
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:root",
+    "criteria":{
+        "hi":{
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": {
+                    "player": {
+                        "advancements": {
+                            "demonslayer:root":true
+                        }
+                    }
+                },
+                "entity": [
+                    {
+                        "condition": "alternative",
+                        "terms": [
+                            {
+                                "condition":"entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"ds_demon\"]}"
+                                }
+                            },
+                            {
+                                "condition":"entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"demon_boost\"]}"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}
