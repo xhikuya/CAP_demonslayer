@@ -3,8 +3,8 @@ execute as @s at @s if block ^ ^ ^0.4 #movable if block ^ ^1.3 ^.4 #movable run 
 execute as @s at @s if block ^ ^ ^0.4 #movable if block ^ ^1.3 ^.4 #movable run tp @s ^ ^ ^0.35
 
 attribute @s generic.movement_speed modifier add b221a289-5d7f-4903-9b4b-cd7baa5719d9 "Water 3rd form" -0.2 multiply
-execute if entity @s[nbt={HurtTime:10s}] run playsound item.shield.break player @a ~ ~ ~
-execute if entity @s[scores={dmg=1..}] run playsound item.shield.break player @a ~ ~ ~
+execute at @s if entity @s[nbt={HurtTime:10s}] run playsound item.shield.break player @a ~ ~ ~
+execute at @s if entity @s[scores={dmg=1..}] run playsound item.shield.break player @a ~ ~ ~
 particle cloud ~ ~ ~ 0.1 0.1 0.1 0.1 10 normal
 particle dripping_water ~ ~ ~ 0.1 0.1 0.1 0.1 10 normal
 particle firework ~ ~ ~ 0.5 0.5 0.5 0.1 1 normal

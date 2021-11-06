@@ -27,6 +27,6 @@ execute at @s[predicate=demonslayer:wisteria] rotated ~50 ~ anchored eyes positi
 tag @s remove immune
 scoreboard players add @s[type=player] xp_power 1
 scoreboard players set @s[type=player] ds_formtime 0
-scoreboard players add @s[type=player] xp_stamina 4
+scoreboard players add @s[type=player] xp_stamina 6
 execute if entity @s[nbt={HurtTime:10s}] run playsound item.shield.break player @a ~ ~ ~
 execute if entity @s[scores={dmg=1..}] run playsound item.shield.break player @a ~ ~ ~

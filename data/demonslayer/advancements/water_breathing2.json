@@ -31,6 +31,6 @@
     },
     "rewards": {
         "experience": 20,
-        "function": "demonslayer:learn_waterbreathing"
+        "function": "demonslayer:slayer/learn_waterbreathing"
     }
 }

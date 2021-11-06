@@ -1,0 +1,47 @@
+{
+    "display": {
+        "icon": {
+            "item": "rotten_flesh"
+        },
+        "title": "Advanced",
+        "description": "kill 27 demons",
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "goal",
+        "show_toast": false
+    },
+    "parent": "demonslayer:slayer/demons/kill_demon10",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "player": {
+                                "advancements": {
+                                    "demonslayer:root":true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "ds_demonkill":{
+                                "min":27
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 1,
+        "function": "demonslayer:slayer/advanced_achievement"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "display": {
+        "icon": {
+            "item": "rotten_flesh"
+        },
+        "title": "Hashira",
+        "description": "kill 50 demons",
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:slayer/demons/kill_demon27",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "player": {
+                                "advancements": {
+                                    "demonslayer:root":true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "ds_demonkill":{
+                                "min":50
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 1,
+        "function": "demonslayer:slayer/hashira_achievement"
+    }
+}

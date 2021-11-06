@@ -1,0 +1,34 @@
+{
+    "criteria":{
+        "hi":{
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": {
+                    "player": {
+                        "advancements": {
+                            "demonslayer:root":true
+                        }
+                    }
+                },
+                "entity": [
+                    {
+                        "condition": "alternative",
+                        "terms": [
+                            {
+                                "condition":"entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"ds_demon\"]}"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "demonslayer:slayer/kill_demon"
+    }
+}

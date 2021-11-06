@@ -22,6 +22,7 @@ scoreboard objectives add ds_kill2 custom:player_kills
 scoreboard objectives add ds_wisteria dummy
 scoreboard objectives add ds_wist_tick dummy
 scoreboard objectives add ds_wist_break mined:lilac
+scoreboard objectives add ds_demonkill dummy
 
 
 
