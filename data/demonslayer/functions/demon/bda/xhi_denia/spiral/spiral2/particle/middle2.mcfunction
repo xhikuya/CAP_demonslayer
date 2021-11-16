@@ -1,0 +1,14 @@
+execute rotated ~ ~150 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~160 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~170 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~180 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~190 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~200 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~210 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~220 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~230 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~240 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~250 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~260 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~270 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
+execute rotated ~ ~280 positioned ^ ^ ^2.5 run function demonslayer:demon/bda/xhi_denia/spiral/spiral2/particle/slash
