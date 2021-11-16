@@ -37,7 +37,19 @@
                                 "nbt": "{Tags:[\"demon_boost\"]}"
                             }
                         }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "player": {
+                                "advancements": {
+                                    "demonslayer:slayer/demons/kill_demon50":true
+                                }
+                            }
+                        }
                     }
+
                 ]
             }
         }

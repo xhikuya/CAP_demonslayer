@@ -1,19 +1,20 @@
 {
     "display": {
         "icon": {
-            "item": "rotten_flesh"
+            "item": "ender_pearl",
+            "nbt": "{Enchantments:[{}]}"
         },
-        "title": "beginner",
-        "description": "kill 10 demons",
+        "title": "True Hashira",
+        "description": "kill a lower moon",
         "announce_to_chat": true,
         "hidden": false,
-        "frame": "goal",
+        "frame": "challenge",
         "show_toast": true
     },
-    "parent": "demonslayer:slayer/demons/kill_demon",
+    "parent": "demonslayer:slayer/demons/kill_demon50",
     "criteria":{
         "hi":{
-            "trigger": "tick",
+            "trigger": "player_killed_entity",
             "conditions": {
                 "player": [
                     {
@@ -38,22 +39,27 @@
                                 "nbt": "{Tags:[\"demon_boost\"]}"
                             }
                         }
-                    },
+                    }
+                ],
+                "entity": [
                     {
-                        "condition": "entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "ds_demonkill":{
-                                "min":10
+                        "condition": "alternative",
+                        "terms": [
+                            {
+                                "condition":"entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"ds_lm\"]}"
+                                }
                             }
-                        }
+                        ]
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "experience": 1,
-        "function": "demonslayer:slayer/beginner_achievement"
+        "experience": 50,
+        "function": "demonslayer:slayer/lm_achievement"
     }
 }

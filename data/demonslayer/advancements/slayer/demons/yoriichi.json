@@ -1,19 +1,23 @@
 {
     "display": {
         "icon": {
-            "item": "rotten_flesh"
+            "item": "netherite_sword",
+            "nbt": "{Enchantments:[{}]}"
         },
-        "title": "beginner",
-        "description": "kill 10 demons",
+        "title": {
+            "text":"Yoriichi.",
+            "color": "aqua"
+        },
+        "description": "kill an upper moon",
         "announce_to_chat": true,
         "hidden": false,
-        "frame": "goal",
+        "frame": "challenge",
         "show_toast": true
     },
-    "parent": "demonslayer:slayer/demons/kill_demon",
+    "parent": "demonslayer:slayer/demons/kill_um",
     "criteria":{
         "hi":{
-            "trigger": "tick",
+            "trigger": "player_killed_entity",
             "conditions": {
                 "player": [
                     {
@@ -38,22 +42,27 @@
                                 "nbt": "{Tags:[\"demon_boost\"]}"
                             }
                         }
-                    },
+                    }
+                ],
+                "entity": [
                     {
-                        "condition": "entity_scores",
-                        "entity": "this",
-                        "scores": {
-                            "ds_demonkill":{
-                                "min":10
+                        "condition": "alternative",
+                        "terms": [
+                            {
+                                "condition":"entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"ds_um1\"]}"
+                                }
                             }
-                        }
+                        ]
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "experience": 1,
-        "function": "demonslayer:slayer/beginner_achievement"
+        "experience": 50,
+        "function": "demonslayer:slayer/um1_achievement"
     }
 }
