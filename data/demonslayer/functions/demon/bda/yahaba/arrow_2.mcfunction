@@ -10,5 +10,6 @@ scoreboard players set @e[tag=ds_new,limit=1] var1 30
 scoreboard players set @e[tag=ds_new,limit=1] var3 0
 scoreboard players set @e[tag=ds_new,limit=1] var4 2
 
+scoreboard players add @s ds_formtime 2
 scoreboard players set @s ds_cooldown 10
 playsound entity.arrow.hit_player player @a

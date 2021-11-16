@@ -4,8 +4,8 @@ execute at @s run tp @s ^ ^ ^0.3
 execute unless block ^ ^ ^0.4 #airs run kill @s
 execute at @s run tp @s ^ ^ ^0.3
 execute unless block ^ ^ ^0.4 #airs run kill @s
-execute at @s run tp @s ^ ^ ^0.3
-execute unless block ^ ^ ^0.4 #airs run kill @s
+#execute at @s run tp @s ^ ^ ^0.3
+#execute unless block ^ ^ ^0.4 #airs run kill @s
 execute if entity @s[tag=!proj_hit] positioned ~-1 ~-0.3 ~-1 as @e[dx=2,dz=2,dy=1,tag=!projectile] run tag @s add hit_check
 
 
