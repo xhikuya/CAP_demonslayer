@@ -19,12 +19,13 @@ scoreboard players add @s[scores={ds_wist_break=1..}] ds_wisteria 40
 
 execute as @s[predicate=core:sneak,scores={ds_cooldown=0,stamina=58..},nbt={SelectedItemSlot:8}] run function demonslayer:demon/regen
 execute as @s[advancements={demonslayer:demon/blood_15=true},nbt={SelectedItemSlot:7}] run function demonslayer:demon/bda/main
-
+execute as @s[tag=checked_stats] run tellraw @s [{"text":"Blood: ","color": "dark_red"},{"score":{"name": "@s","objective": "ds_blood"}}]
 #>atk
 execute if entity @s[predicate=core:atked,scores={stamina=3..}] run scoreboard players add @s stamina_cool 20
 execute if entity @s[predicate=core:atked,scores={stamina=3..}] run scoreboard players remove @s stamina 3
 execute if entity @s[predicate=core:atked,scores={stamina_cool=10..20,stamina=..0}] run scoreboard players add @s xp_stamina 1
 execute if entity @s[predicate=core:atked,scores={stamina_cool=10..20,stamina=..0}] run scoreboard players add @s stamina_cool 400
+function demonslayer:slayer/refinery_attributes
 #>no stam
 effect give @s[predicate=demonslayer:no_stam] slowness 4 1 true
 effect give @s[predicate=demonslayer:no_stam] weakness 1 1 true
