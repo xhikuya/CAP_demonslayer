@@ -23,7 +23,8 @@ execute positioned ~ ~3 ~ run function demonslayer:breathing/water/particle_whee
 function demonslayer:breathing/water/damage
 tag @s add immune
 execute positioned ^ ^.5 ^1.7 rotated ~ 0 positioned ~-2 ~-2 ~-2 as @e[dx=4,dz=4,dy=7,tag=!immune] unless score @s dmg matches 1.. run scoreboard players operation @s dmg = #ds:temp var1
-execute positioned ^ ^.5 ^1.7 rotated ~ 0 positioned ~-2 ~-2 ~-2 as @e[dx=4,dz=4,dy=7,tag=!immune] unless score @s dmg matches 1.. run scoreboard players add @s ds_wisteria 50
+execute positioned ^ ^.5 ^1.7 rotated ~ 0 positioned ~-2 ~-2 ~-2 as @e[dx=4,dz=4,dy=7,tag=!immune,tag=projectile] unless score @s dmg matches 1.. run function demonslayer:breathing/water/counter
+execute if predicate demonslayer:wisteria positioned ^ ^.5 ^1.7 rotated ~ 0 positioned ~-2 ~-2 ~-2 as @e[dx=4,dz=4,dy=7,tag=!immune] unless score @s dmg matches 1.. run scoreboard players add @s ds_wisteria 50
 
 tag @s remove immune
 execute rotated ~ 0 run tp ^ ^1 ^3.5
