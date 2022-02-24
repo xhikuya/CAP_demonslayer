@@ -1,5 +1,5 @@
 scoreboard players set @s ds_cooldown 16
-scoreboard players set @s ds_formtime 43
+scoreboard players set @s ds_formtime 47
 scoreboard players remove @s stamina 18
 scoreboard players add @s xp_power 4
 scoreboard players add @s xp_stamina 6

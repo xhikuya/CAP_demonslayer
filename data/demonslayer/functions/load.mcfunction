@@ -1,6 +1,12 @@
 kill @e[tag=cap_ds]
 execute unless entity @e[tag=cap_ds] run summon area_effect_cloud ~ ~ ~ {Tags:["cap_ds","addon"],CustomName:'{"text":"Demon Slayer","color": "dark_red"}',Duration:10000}
 scoreboard players set @e[tag=cap_ds] addon 2
+schedule function demonslayer:slayer/advancements_s 30s replace
+schedule function demonslayer:demon/advancements_s 30s replace
+
+
+schedule function demonslayer:spawn 100s replace
+
 
 
 scoreboard objectives add ds_sleepcool dummy

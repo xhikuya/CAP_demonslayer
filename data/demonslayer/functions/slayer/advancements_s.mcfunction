@@ -1,0 +1,1 @@
+execute as @a[scores={ability=2},tag=!demon_boost] run function demonslayer:slayer/advancements
