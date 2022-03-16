@@ -1,0 +1,20 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate":{
+                "nbt": "{Tags:[\"ds_demon\"]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate":{
+                "nbt": "{Tags:[\"demon_boost\"]}"
+            }
+        }
+
+    ]
+}

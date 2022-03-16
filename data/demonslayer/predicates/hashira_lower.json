@@ -1,0 +1,14 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition":"entity_scores",
+            "entity": "this",
+            "scores": {
+                "ds_demonkill":{
+                    "min": 27
+                }
+            }
+        }
+    ]
+}

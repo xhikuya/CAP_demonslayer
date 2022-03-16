@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:alternative",
+    "entity": "this",
+    "terms": [
+        {
+            "condition":"reference",
+            "name": "demonslayer:blood/blood_30"
+        },
+        {
+            "condition":"reference",
+            "name": "demonslayer:hashira"
+        }
+    ]
+}

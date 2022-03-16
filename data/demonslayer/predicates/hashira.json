@@ -1,0 +1,23 @@
+[
+    {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "player": {
+                "advancements": {
+                    "demonslayer:slayer/demons/kill_demon50":true
+                }
+            }
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"demon_boost\"]}"
+            }
+        }
+    }
+]

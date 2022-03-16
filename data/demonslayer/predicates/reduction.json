@@ -1,0 +1,23 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "ds_formtime":{
+                    "min": 1
+                }
+            }
+        },
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "ds_lhit":{
+                    "min": 1
+                }
+            }
+        }
+    ]
+}

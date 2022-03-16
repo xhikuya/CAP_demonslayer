@@ -1,0 +1,34 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "tag": "demonslayer:swords",
+                        "nbt": "{Cap:{Firebreathing:1b}}"
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "tag": "demonslayer:swords",
+                        "enchantments": [
+                            {
+                                "enchantment": "fire_aspect"
+                            }
+                        ],
+                        "nbt": "{Cap:{Waterbreathing:1b}}"
+                    }
+                }
+            }
+        }
+    ]
+}

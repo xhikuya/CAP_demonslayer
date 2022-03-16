@@ -1,11 +1,9 @@
 {
-    "condition": "entity_properties",
+    "condition":"entity_scores",
     "entity": "this",
-    "predicate": {
-        "equipment": {
-            "mainhand": {
-                "nbt": "{Cap:{Wisteria:1b}}"
-            }
+    "scores": {
+        "ds_wisteria":{
+            "min":1
         }
     }
 }
