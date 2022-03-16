@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:40006,Cap:{Invitation:1b},display:{Name:'{"text":"Final Selection(Invite)","italic": false,"color": "light_purple"}'}}
