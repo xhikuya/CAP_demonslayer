@@ -10,7 +10,7 @@
         "frame": "challenge",
         "show_toast": true
     },
-    "parent": "demonslayer:water_breathing",
+    "parent": "demonslayer:slayer/training",
     "criteria":{
         "hi":{
             "trigger": "tick",
@@ -38,7 +38,7 @@
                         "predicate": {
                             "player": {
                                 "advancements": {
-                                    "demonslayer:water_breathing":true
+                                    "demonslayer:slayer/training":true
                                 }
                             }
                         }
