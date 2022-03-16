@@ -1,9 +1,9 @@
-scoreboard players remove @s stat_stamina 3
-scoreboard players remove @s max_stamina 60
-scoreboard players remove @s stat_power 2
-scoreboard players remove @s stat_control 2
-scoreboard players remove @s stat_def 5
-scoreboard players remove @s ds_blood 2
+#scoreboard players remove @s stat_stamina 3
+#scoreboard players remove @s max_stamina 60
+#scoreboard players remove @s stat_power 2
+#scoreboard players remove @s stat_control 2
+#scoreboard players remove @s stat_def 5
+#scoreboard players remove @s ds_blood 2
 
 
 #>Remove Control

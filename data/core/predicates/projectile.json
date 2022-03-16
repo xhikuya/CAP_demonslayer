@@ -1,0 +1,21 @@
+[
+    {
+        "condition": "alternative",
+        "terms": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"projectile\"]}"
+                }
+            },
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "type": "#arrows"
+                }
+            }
+        ]
+    }
+]

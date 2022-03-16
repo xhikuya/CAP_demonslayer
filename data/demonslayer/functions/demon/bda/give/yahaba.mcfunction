@@ -1,1 +1,1 @@
-give @s carrot_on_a_stick{Cap:{Bda:1b,ID:3b},display:{Name:'{"text":"Blood Demon Art(Yahaba)","italic": false,"color": "red"}'},AttributeModifiers:[{Amount:1.5,AttributeName:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;1010,1010,1010,1010],Name:"10"}]}
+give @s carrot_on_a_stick{Cap:{Bda:1b,ID:3b},CustomModelData:40007,display:{Name:'{"text":"Blood Demon Art(Yahaba)","italic": false,"color": "red"}'},AttributeModifiers:[{Amount:5,AttributeName:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;1010,1010,1010,1010],Name:"10"}]}

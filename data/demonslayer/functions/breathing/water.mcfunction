@@ -29,16 +29,16 @@ execute if predicate core:click if score @s[scores={stamina=..14,ds_cooldown=0}]
 execute if predicate core:click if score @s[scores={stamina=15..,ds_cooldown=0}] ds_waterform matches 2 run function demonslayer:breathing/water/water_wheel
 
 execute if predicate core:click if score @s[scores={stamina=..17,ds_cooldown=0}] ds_waterform matches 3 run tellraw @s "Too Tired"
-execute if predicate core:click if score @s[scores={stamina=18..,ds_cooldown=0},predicate=!demonslayer:firebreathing] ds_waterform matches 3 run function demonslayer:breathing/water/third_form1
+execute if predicate core:click if score @s[scores={stamina=18..,ds_cooldown=0},predicate=!demonslayer:breathing/sun] ds_waterform matches 3 run function demonslayer:breathing/water/third_form1
 
 execute if predicate core:click if score @s[scores={stamina=..19,ds_cooldown=0}] ds_waterform matches 4 run tellraw @s "Too Tired"
-execute if predicate core:click if score @s[scores={stamina=20..,ds_cooldown=0},predicate=!demonslayer:firebreathing] ds_waterform matches 4 run function demonslayer:breathing/water/5th/init
+execute if predicate core:click if score @s[scores={stamina=20..,ds_cooldown=0},predicate=!demonslayer:breathing/sun] ds_waterform matches 4 run function demonslayer:breathing/water/5th/init
 
 execute if predicate core:click if score @s[scores={stamina=..15,ds_cooldown=0}] ds_waterform matches 5 run tellraw @s "Too Tired"
-execute if predicate core:click if score @s[scores={stamina=16..,ds_cooldown=0},predicate=!demonslayer:firebreathing] ds_waterform matches 5 run function demonslayer:breathing/water/6th/init
+execute if predicate core:click if score @s[scores={stamina=16..,ds_cooldown=0},predicate=!demonslayer:breathing/sun] ds_waterform matches 5 run function demonslayer:breathing/water/6th/init
 
 execute if predicate core:click if score @s[scores={stamina=..23,ds_cooldown=0}] ds_waterform matches 6 run tellraw @s "Too Tired"
-execute if predicate core:click if score @s[scores={stamina=24..,ds_cooldown=0},predicate=!demonslayer:firebreathing] ds_waterform matches 6 run function demonslayer:breathing/water/dead_calm/init
+execute if predicate core:click if score @s[scores={stamina=24..,ds_cooldown=0},predicate=!demonslayer:breathing/sun] ds_waterform matches 6 run function demonslayer:breathing/water/dead_calm/init
 
 #> yes
 

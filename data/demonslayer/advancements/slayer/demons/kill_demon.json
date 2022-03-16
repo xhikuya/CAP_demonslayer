@@ -65,6 +65,7 @@
         }
     },
     "rewards": {
-        "experience": 100
+        "experience": 100,
+        "function": "demonslayer:give_invitation"
     }
 }

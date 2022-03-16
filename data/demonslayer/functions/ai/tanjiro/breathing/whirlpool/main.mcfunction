@@ -37,6 +37,3 @@ execute if score @s ds_formtime matches 33 run scoreboard players set @s ds_cool
 execute if score @s ds_formtime matches 33 run attribute @s generic.movement_speed modifier remove 0ffbf497-1acc-4ded-92a6-c8662e7af3fc
 execute if score @s ds_formtime matches 33 run scoreboard players set @s ds_formtime 0
 
-
-execute if entity @s[nbt={HurtTime:10s}] run playsound item.shield.break player @a ~ ~ ~
-execute if entity @s[scores={dmg=1..}] run playsound item.shield.break player @a ~ ~ ~

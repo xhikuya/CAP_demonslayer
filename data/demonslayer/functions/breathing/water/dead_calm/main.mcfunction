@@ -1,5 +1,3 @@
-execute at @s if entity @s[nbt={HurtTime:10s}] run playsound item.shield.break player @a ~ ~ ~
-execute at @s if entity @s[predicate=core:dmg] run playsound item.shield.break player @a ~ ~ ~
 
 function demonslayer:breathing/water/damage
 tag @s add immune

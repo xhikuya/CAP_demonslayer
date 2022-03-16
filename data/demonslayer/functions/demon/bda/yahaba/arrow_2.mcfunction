@@ -1,5 +1,5 @@
 tag @e remove ds_new
-scoreboard players remove @s stamina 30
+scoreboard players remove @s[scores={ds_bdamove=2}] stamina 30
 execute anchored eyes positioned ^ ^ ^2 run summon area_effect_cloud ~ ~ ~ {Tags:["ds_yahaba_arrow","projectile","ds_new","ds_proj"],Duration:1000000,CustomName:'{"text":"hi"}'}
 function demonslayer:demon/bda/yahaba/dmg
 scoreboard players operation @e[tag=ds_new] var2 = #ds:temp var1
@@ -10,6 +10,6 @@ scoreboard players set @e[tag=ds_new,limit=1] var1 30
 scoreboard players set @e[tag=ds_new,limit=1] var3 0
 scoreboard players set @e[tag=ds_new,limit=1] var4 2
 
-scoreboard players add @s ds_formtime 2
-scoreboard players set @s ds_cooldown 30
+scoreboard players add @s[scores={ds_bdamove=2}] ds_formtime 2
+scoreboard players set @s[scores={ds_bdamove=2}] ds_cooldown 30
 playsound entity.arrow.hit_player player @a

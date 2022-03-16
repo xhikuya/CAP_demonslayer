@@ -1,0 +1,51 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond"
+        },
+        "title": "Training",
+        "description": "Train with tanjiro or shinobu",
+        "announce_to_chat": false,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:slayer/demons/kill_demon",
+    "criteria":{
+        "hi":{
+            "trigger": "tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "alternative",
+                        "terms": [
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "player":{
+                                        "advancements": {
+                                            "demonslayer:slayer/water_breathing":true
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "condition": "entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "player":{
+                                        "advancements": {
+                                            "demonslayer:slayer/insect_breathing":true
+                                        }
+                                    }
+                                }
+                            }
+
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -6,7 +6,8 @@
             "advancements": {
                 "demonslayer:demon/blood_30":true
             }
-        }
+        },
+        "nbt": "{Tags:[\"demon_boost\"]}"
     }
 },
 {

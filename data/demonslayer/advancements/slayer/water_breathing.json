@@ -11,7 +11,7 @@
         "frame": "challenge",
         "show_toast": true
     },
-    "parent": "demonslayer:slayer/demons/kill_demon",
+    "parent": "demonslayer:slayer/training",
     "criteria":{
         "hi":{
             "trigger": "player_killed_entity",
@@ -37,7 +37,7 @@
                     }
                 ],
                 "entity": {
-                    "nbt": "{Tags:[\"ds_slayer\"]}"
+                    "nbt": "{Tags:[\"ds_tanjiro\"]}"
                 }
             }
         }

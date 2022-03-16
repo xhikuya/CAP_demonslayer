@@ -7,4 +7,4 @@ scoreboard players remove @s[type=player] stamina_cool 50
 
 scoreboard players remove @s[type=!player] var2 2
 scoreboard players remove @s[type=!player] var3 10
-scoreboard players add @s ds_formtime 1
+scoreboard players add @s ds_formtime 10

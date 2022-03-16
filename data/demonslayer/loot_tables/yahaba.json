@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:spider_eye",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Muzan Blood\",\"italic\": false}'},Muzan:1b}"
+                        }
+                    ]
+                },
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Cap:{Bda:1b,ID:3b},CustomModelData:40007,display:{Name:'{\"text\":\"Blood Demon Art(Yahaba)\",\"italic\": false,\"color\": \"red\"}'},AttributeModifiers:[{Amount:5,AttributeName:\"minecraft:generic.attack_damage\",Operation:0,Slot:\"mainhand\",UUID:[I;1010,1010,1010,1010],Name:\"10\"}]}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "random_chance",
+                            "chance": 0.05
+                        }
+                    ]
+                }
+
+            ]
+        }
+    ]
+}

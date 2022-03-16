@@ -1,0 +1,1 @@
+execute rotated ~ 0 positioned ~ ~1 ~ positioned ^ ^ ^0.3 run function demonslayer:demon/bda/yahaba/punch_parti2

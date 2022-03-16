@@ -21,5 +21,5 @@ execute if entity @s[advancements={demonslayer:slayer/refinery_4=true}] if predi
 execute if entity @s[advancements={demonslayer:slayer/refinery_3=true}] if predicate demonslayer:sword unless predicate demonslayer:no_stam run attribute @s generic.attack_speed modifier add c3f1e13b-5cc5-49c8-9e6b-d0a21976192f "2" 2 add
 execute if entity @s[advancements={demonslayer:slayer/refinery_2=true}] if predicate demonslayer:sword unless predicate demonslayer:no_stam run attribute @s generic.attack_speed modifier add c3f1e13b-5cc5-49c8-9e6b-d0a21976192f "1" 1 add
 
-execute unless predicate demonslayer:sword run attribute @s[tag=demon_boost] generic.attack_speed modifier remove c3f1e13b-5cc5-49c8-9e6b-d0a21976192f
-execute unless predicate demonslayer:sword run attribute @s[tag=demon_boost] generic.attack_damage modifier remove c3f1e13b-5cc5-49c8-9e6b-d0a21976192f
+execute unless predicate demonslayer:sword run attribute @s generic.attack_speed modifier remove c3f1e13b-5cc5-49c8-9e6b-d0a21976192f
+execute unless predicate demonslayer:sword run attribute @s generic.attack_damage modifier remove c3f1e13b-5cc5-49c8-9e6b-d0a21976192f

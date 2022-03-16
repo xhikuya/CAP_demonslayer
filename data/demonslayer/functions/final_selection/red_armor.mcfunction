@@ -1,0 +1,4 @@
+give @s leather_chestplate{display:{color:9849932,Name:'{"text": "Demon Slayer Uniform","italic": false}'},Cap:{Armor:1b},Unbreakable:1b,AttributeModifiers:[{Amount:10,AttributeName:"generic.armor",Name:"Uniform",Operation:0,Slot:"chest",UUID:[I;1010,1010,1010,1013]},{Amount:4,Name:"Uniform",AttributeName:"generic.armor_toughness",Operation:0,Slot:"chest",UUID:[I;1010,1010,1010,1013]}]}
+give @s leather_leggings{display:{color:9849932,Name:'{"text": "Demon Slayer Pants","italic": false}'},Cap:{Armor:1b},Unbreakable:1b,AttributeModifiers:[{Amount:9,AttributeName:"generic.armor",Name:"Uniform",Operation:0,Slot:"legs",UUID:[I;1010,1010,1010,1012]},{Amount:3,Name:"Uniform",AttributeName:"generic.armor_toughness",Operation:0,Slot:"legs",UUID:[I;1010,1010,1010,1012]}]}
+
+tag @s add ds_given

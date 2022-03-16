@@ -1,0 +1,1 @@
+execute as @e[distance=0.2..20] if score @s uuid = @e[tag=ds_this,limit=1] ds_ait run tag @s add ds_target

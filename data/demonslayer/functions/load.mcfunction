@@ -1,25 +1,31 @@
 kill @e[tag=cap_ds]
 execute unless entity @e[tag=cap_ds] run summon area_effect_cloud ~ ~ ~ {Tags:["cap_ds","addon"],CustomName:'{"text":"Demon Slayer","color": "dark_red"}',Duration:10000}
 scoreboard players set @e[tag=cap_ds] addon 2
-schedule function demonslayer:slayer/advancements_s 30s replace
-schedule function demonslayer:demon/advancements_s 30s replace
+schedule function demonslayer:slayer/advancements_s 10s replace
+schedule function demonslayer:demon/advancements_s 10s replace
+schedule function demonslayer:slayer/clear_sword 2s replace
+schedule function demonslayer:refinery 10s replace
 
 
-schedule function demonslayer:spawn 100s replace
+schedule function demonslayer:spawn 3s replace
 
 
+scoreboard objectives add ds_finalselection dummy
+scoreboard objectives add ds_finals_cool dummy
 
 scoreboard objectives add ds_sleepcool dummy
 
-
+scoreboard objectives add ds_insectform dummy
 scoreboard objectives add ds_waterform dummy
 scoreboard objectives add ds_fireform dummy
+scoreboard objectives add ds_ghostswordc dummy
 scoreboard objectives add ds_bdamove dummy
 
 
 scoreboard objectives add ds_cooldown dummy
 scoreboard objectives add ds_swap dummy
 scoreboard objectives add ds_formtime dummy
+scoreboard objectives add ds_lhit dummy
 scoreboard objectives add ds_death deathCount
 scoreboard objectives add ds_bloodxp dummy
 scoreboard objectives add ds_blood dummy
@@ -29,6 +35,7 @@ scoreboard objectives add ds_wisteria dummy
 scoreboard objectives add ds_wist_tick dummy
 scoreboard objectives add ds_wist_break mined:lilac
 scoreboard objectives add ds_demonkill dummy
+scoreboard objectives add ds_ait dummy
 
 
 

@@ -1,0 +1,15 @@
+execute rotated ~-70 ~-30 run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~-60 ~-35 run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~-50 ~-40 run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~-40 ~-35 run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~-30 ~-30 run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~-20 ~-20 run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~-10 ~-10 run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~ ~-5 run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~10 ~ run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~20 ~ run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~30 ~ run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~40 ~ run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~50 ~ run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~60 ~ run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal
+execute rotated ~70 ~ run particle dust 1 1 1 1 ^ ^ ^1.3 0 0 0 1 50 normal

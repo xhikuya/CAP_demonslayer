@@ -1,0 +1,1 @@
+execute as @a[tag=final_mark] at @s run function demonslayer:final_selection/mark

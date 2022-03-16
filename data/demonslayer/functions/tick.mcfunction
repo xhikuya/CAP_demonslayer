@@ -9,26 +9,35 @@ execute as @a[scores={ds_death=1..,ability=2}] at @s run function demonslayer:de
 execute as @a[scores={ability=2},tag=!demon_boost] run function demonslayer:main_slayer
 execute as @a[scores={ability=2},tag=demon_boost] run function demonslayer:main_demon
 
-execute as @a[predicate=!demonslayer:waterbreathing] run clear @s carrot_on_a_stick{WaterBreathing:1b}
-execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{WaterBreathing:1b}}]}] run clear @s carrot_on_a_stick{WaterBreathing:1b}
-execute as @a[predicate=!demonslayer:firebreathing] run clear @s carrot_on_a_stick{FireBreathing:1b}
-execute as @a unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{FireBreathing:1b}}]}] run clear @s carrot_on_a_stick{FireBreathing:1b}
+execute as @a[scores={stat_control=4..},predicate=demonslayer:breathing/water,predicate=!demonslayer:breathing/sun] at @s run function demonslayer:breathing/water 
+execute as @a[scores={stat_control=6..},predicate=demonslayer:breathing/sun] at @s run function demonslayer:breathing/fire 
+execute as @a[scores={stat_control=6..},predicate=demonslayer:breathing/insect] at @s run function demonslayer:breathing/insect
 
-execute as @a[scores={stat_control=6..},predicate=demonslayer:waterbreathing,predicate=!demonslayer:firebreathing] at @s run function demonslayer:breathing/water 
-execute as @a[scores={stat_control=6..},predicate=demonslayer:firebreathing] at @s run function demonslayer:breathing/fire 
 execute as @a[tag=demon_boost,predicate=demonslayer:blooddemonart] at @s run function demonslayer:demon/bda/main
 
-execute as @e[tag=ds_slayer] at @s run function demonslayer:ai/tanjiro/tick
-execute as @e[tag=ds_demon] at @s run function demonslayer:ai/demon/tick
+execute as @e[tag=ds_tanjiro] at @s if entity @a[distance=..100] run function demonslayer:ai/tanjiro/tick
+execute as @e[tag=ds_shinobu] at @s if entity @a[distance=..100] run function demonslayer:ai/shinobu/tick
+
+execute as @e[tag=ds_demon] at @s if entity @a[distance=..100] run function demonslayer:ai/demon/tick
 
 scoreboard players add @a ds_formtime 0
 scoreboard players remove @a[scores={ds_formtime=1..}] ds_formtime 1
+scoreboard players add @a ds_lhit 0
+scoreboard players remove @a[scores={ds_lhit=1..}] ds_lhit 1
 scoreboard players add @a ds_cooldown 0
 scoreboard players remove @a[scores={ds_cooldown=1..}] ds_cooldown 1
+scoreboard players add @a ds_ghostswordc 0
+scoreboard players remove @a[scores={ds_ghostswordc=1..}] ds_ghostswordc 1
+scoreboard players remove @a[scores={ds_finals_cool=1..}] ds_finals_cool 1
+execute as @a if score @s ds_finals_cool matches 1 run function demonslayer:give_invitation
+ 
 scoreboard players set @a[scores={ds_kill=1..}] ds_kill 0
 scoreboard players set @a[scores={ds_kill2=1..}] ds_kill2 0
 scoreboard players set @a[scores={ds_wist_break=1..}] ds_wist_break 0
 execute as @e[tag=ds_proj] run function demonslayer:projectile
 execute as @a[nbt=!{Inventory:[{Slot:103b}]},predicate=demonslayer:mask] if predicate core:click run function demonslayer:mask/equip
 
+execute as @a[predicate=demonslayer:in_selection] at @s run function demonslayer:final_selection/main
+execute as @a[nbt={SelectedItem:{tag:{Cap:{Invitation:1b}}}},predicate=core:click] unless score @s ds_finalselection matches 8.. at @s run function demonslayer:final_selection/enter
+execute as @a[scores={ds_finalselection=1..7},predicate=!demonslayer:in_selection] run function demonslayer:final_selection/death
 execute as @e[type=item,nbt={Item:{tag:{Cap:{BDA:0b}}}}] at @s run function demonslayer:demon/bda/random

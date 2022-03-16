@@ -1,0 +1,11 @@
+[
+    {
+        "function": "set_damage",
+        "damage": 10000,
+        "add": false
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{RepairCost:0}"
+    }
+]

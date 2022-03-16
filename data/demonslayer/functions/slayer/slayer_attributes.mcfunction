@@ -14,4 +14,3 @@ execute unless predicate demonslayer:no_stam if score @s stat_control matches ..
 execute unless predicate demonslayer:sword run attribute @s generic.attack_speed base set 4
 execute unless predicate demonslayer:sword run attribute @s generic.attack_damage base set 1
 
-function demonslayer:slayer/refinery_attributes
