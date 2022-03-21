@@ -1,0 +1,19 @@
+
+execute rotated ~20 ~ positioned ~ ~-.3 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~10 ~ positioned ~ ~-.2 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~ ~ positioned ~ ~-.1 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-10 ~ positioned ~ ~ ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-20 ~ positioned ~ ~.1 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-30 ~ positioned ~ ~.2 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-40 ~ positioned ~ ~.3 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-50 ~ positioned ~ ~.4 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-60 ~ positioned ~ ~.5 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-70 ~ positioned ~ ~.6 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-80 ~ positioned ~ ~.7 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-90 ~ positioned ~ ~.8 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-100 ~ positioned ~ ~1 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-110 ~ positioned ~ ~1.1 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-120 ~ positioned ~ ~1.2 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-130 ~ positioned ~ ~1.3 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-140 ~ positioned ~ ~1.4 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal
+execute rotated ~-150 ~ positioned ~ ~1.5 ~ run particle minecraft:item minecraft:bamboo ^ ^1.6 ^2.8 0 0 0 0.2 10 normal

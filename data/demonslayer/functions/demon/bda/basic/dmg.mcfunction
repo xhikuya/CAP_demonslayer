@@ -1,5 +1,5 @@
 execute if entity @s[tag=!ds_demon] store result score #ds:temp var1 run attribute @s generic.attack_damage get 8
-execute if entity @s[tag=ds_demon] store result score #ds:temp var1 run attribute @s generic.attack_damage get 8.7
+execute if entity @s[tag=ds_demon] store result score #ds:temp var1 run attribute @s generic.attack_damage get 10
 
 scoreboard players set #ds:temp var2 4
 execute store result score #ds:temp var3 run scoreboard players get @s stat_power

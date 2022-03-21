@@ -1,0 +1,1 @@
+#execute unless data entity @s {Motion:[0.0d,0.0d,0.0d]} run say hi

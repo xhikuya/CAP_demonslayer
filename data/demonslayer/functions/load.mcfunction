@@ -40,7 +40,8 @@ scoreboard objectives add ds_ait dummy
 
 
 
-
+team add ds_collide "no collision"
+team modify ds_collide collisionRule never
 scoreboard objectives add ds_racechoice trigger
 
 

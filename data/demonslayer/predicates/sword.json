@@ -1,28 +1,44 @@
-{
-    "condition": "alternative",
-    "terms": [
-        {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "equipment": {
-                    "mainhand": {
-                        "tag": "demonslayer:swords"
+[
+    {
+        "condition": "alternative",
+        "terms": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "tag": "demonslayer:swords"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{Cap:{Sword:1b}}"
+                        }
                     }
                 }
             }
-        },
-        {
-            "condition": "entity_properties",
+
+        ]
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
                 "equipment": {
                     "mainhand": {
-                        "nbt": "{Cap:{Sword:1b}}"
+                        "nbt": "{Cap:{Bamboo:1b}}"
                     }
                 }
             }
         }
-
-    ]
-}
+    }
+]

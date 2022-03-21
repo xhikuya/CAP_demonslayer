@@ -12,12 +12,15 @@ execute as @a[scores={ability=2},tag=demon_boost] run function demonslayer:main_
 execute as @a[scores={stat_control=4..},predicate=demonslayer:breathing/water,predicate=!demonslayer:breathing/sun] at @s run function demonslayer:breathing/water 
 execute as @a[scores={stat_control=6..},predicate=demonslayer:breathing/sun] at @s run function demonslayer:breathing/fire 
 execute as @a[scores={stat_control=6..},predicate=demonslayer:breathing/insect] at @s run function demonslayer:breathing/insect
+execute as @a[predicate=!demonslayer:breathing,nbt={SelectedItem:{tag:{Cap:{Nichirin:1b}}}},predicate=core:atked_full] at @s positioned ^ ^.5 ^1.1 run function demonslayer:breathing/attack
+execute as @a[nbt={SelectedItem:{tag:{Cap:{Bamboo:1b}}}}] at @s run function demonslayer:breathing/bamboo/main
+
 
 execute as @a[tag=demon_boost,predicate=demonslayer:blooddemonart] at @s run function demonslayer:demon/bda/main
 
 execute as @e[tag=ds_tanjiro] at @s if entity @a[distance=..100] run function demonslayer:ai/tanjiro/tick
 execute as @e[tag=ds_shinobu] at @s if entity @a[distance=..100] run function demonslayer:ai/shinobu/tick
-
+execute as @e[tag=ds_training] at @s if entity @a[distance=..30] run function demonslayer:ai/training/tick
 execute as @e[tag=ds_demon] at @s if entity @a[distance=..100] run function demonslayer:ai/demon/tick
 
 scoreboard players add @a ds_formtime 0
@@ -31,6 +34,10 @@ scoreboard players remove @a[scores={ds_ghostswordc=1..}] ds_ghostswordc 1
 scoreboard players remove @a[scores={ds_finals_cool=1..}] ds_finals_cool 1
 execute as @a if score @s ds_finals_cool matches 1 run function demonslayer:give_invitation
  
+scoreboard players add @e[tag=ds_hitbox] var1 1
+execute as @e[tag=ds_hitbox,scores={var1=5..}] run tp @s ~ -900 ~
+kill @e[tag=ds_hitbox,scores={var1=5..}]
+
 scoreboard players set @a[scores={ds_kill=1..}] ds_kill 0
 scoreboard players set @a[scores={ds_kill2=1..}] ds_kill2 0
 scoreboard players set @a[scores={ds_wist_break=1..}] ds_wist_break 0

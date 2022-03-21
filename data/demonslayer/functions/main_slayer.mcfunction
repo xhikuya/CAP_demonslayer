@@ -1,6 +1,7 @@
 execute if entity @s[predicate=core:atked,predicate=demonslayer:sword] run scoreboard players add @s xp_control 2
 execute if entity @s[predicate=demonslayer:sword,nbt={HurtTime:9s}] run scoreboard players add @s xp_def 2
 execute if entity @s[predicate=demonslayer:sword,scores={hurt=50..}] run scoreboard players add @s xp_def 10
+execute if entity @s[predicate=demonslayer:sword,scores={hurt=90..}] run scoreboard players add @s xp_def 10
 
 execute if entity @s[predicate=demonslayer:sword,nbt=!{HurtTime:0s},predicate=core:atked_full] run playsound item.shield.break player @s
 execute if entity @s[nbt={HurtTime:10s},scores={ds_formtime=1..}] at @s run playsound item.shield.break player @a ~ ~ ~

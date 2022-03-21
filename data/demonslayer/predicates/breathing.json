@@ -1,0 +1,18 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "demonslayer:breathing/insect"
+        },
+        {
+            "condition": "reference",
+            "name": "demonslayer:breathing/water"
+        },
+        {
+            "condition": "reference",
+            "name": "demonslayer:breathing/sun"
+        }
+    ]
+        
+}
