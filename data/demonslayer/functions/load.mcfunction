@@ -20,6 +20,10 @@ scoreboard objectives add ds_waterform dummy
 scoreboard objectives add ds_fireform dummy
 scoreboard objectives add ds_ghostswordc dummy
 scoreboard objectives add ds_bdamove dummy
+scoreboard objectives add ds_motx dummy
+scoreboard objectives add ds_motz dummy
+scoreboard objectives add ds_motx2 dummy
+scoreboard objectives add ds_motz2 dummy
 
 
 scoreboard objectives add ds_cooldown dummy

@@ -12,7 +12,8 @@ execute as @a[scores={ability=2},tag=demon_boost] run function demonslayer:main_
 execute as @a[scores={stat_control=4..},predicate=demonslayer:breathing/water,predicate=!demonslayer:breathing/sun] at @s run function demonslayer:breathing/water 
 execute as @a[scores={stat_control=6..},predicate=demonslayer:breathing/sun] at @s run function demonslayer:breathing/fire 
 execute as @a[scores={stat_control=6..},predicate=demonslayer:breathing/insect] at @s run function demonslayer:breathing/insect
-execute as @a[predicate=!demonslayer:breathing,nbt={SelectedItem:{tag:{Cap:{Nichirin:1b}}}},predicate=core:atked_full] at @s positioned ^ ^.5 ^1.1 run function demonslayer:breathing/attack
+execute as @a[nbt={SelectedItem:{tag:{Cap:{Nichirin:1b}}}}] at @s run function demonslayer:breathing/nichirin
+
 execute as @a[nbt={SelectedItem:{tag:{Cap:{Bamboo:1b}}}}] at @s run function demonslayer:breathing/bamboo/main
 
 

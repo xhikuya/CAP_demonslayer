@@ -12,11 +12,11 @@ execute unless score @s var1 matches 1.. unless entity @e[tag=ds_owner,scores={d
 scoreboard players add @s var1 1
 
 
-execute if score @s var1 matches 5 unless entity @e[tag=ds_owner,scores={ds_lhit=1..}] positioned ~.5 ~.5 ~.5 as @e[tag=!ds_owner,dx=-1,dy=-1,dz=-1,type=!#core:non_living,tag=!ds_hitbox] run scoreboard players operation @s dmg = @e[tag=ds_this] var2
-execute if score @s var1 matches 5 unless entity @e[tag=ds_owner,scores={ds_lhit=1..}] positioned ~.5 ~.5 ~.5 as @a[tag=!ds_owner,dx=-1,dy=-1,dz=-1] at @s facing entity @e[tag=ds_owner] feet run tp @s ^ ^.6 ^-.6
-execute if score @s var1 matches 6 unless entity @e[tag=ds_owner,scores={ds_lhit=1..}] positioned ~.5 ~.5 ~.5 as @a[tag=!ds_owner,dx=-1,dy=-1,dz=-1] at @s facing entity @e[tag=ds_owner] feet run tp @s ^ ^.6 ^-.6
+execute if score @s var1 matches 3 unless entity @e[tag=ds_owner,scores={ds_lhit=1..}] positioned ~.5 ~.5 ~.5 as @e[tag=!ds_owner,dx=-1,dy=-1,dz=-1,type=!#core:non_living,tag=!ds_hitbox] run scoreboard players operation @s dmg = @e[tag=ds_this] var2
+execute if score @s var1 matches 3 unless entity @e[tag=ds_owner,scores={ds_lhit=1..}] positioned ~.5 ~.5 ~.5 as @a[tag=!ds_owner,dx=-1,dy=-1,dz=-1] at @s facing entity @e[tag=ds_owner] feet run tp @s ^ ^.3 ^-.3
+execute if score @s var1 matches 4 unless entity @e[tag=ds_owner,scores={ds_lhit=1..}] positioned ~.5 ~.5 ~.5 as @a[tag=!ds_owner,dx=-1,dy=-1,dz=-1] at @s facing entity @e[tag=ds_owner] feet run tp @s ^ ^.3 ^-.3
 
 
-kill @s[scores={var1=6}]
+kill @s[scores={var1=4}]
 tag @s remove ds_this
 tag @e remove ds_owner

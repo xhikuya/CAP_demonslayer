@@ -24,7 +24,8 @@
                             "entity": "this",
                             "player": {
                                 "advancements": {
-                                    "demonslayer:root":true
+                                    "demonslayer:root":true,
+                                    "demonslayer:slayer/demons/kill_demon27":true
                                 }
                             }
                         }
