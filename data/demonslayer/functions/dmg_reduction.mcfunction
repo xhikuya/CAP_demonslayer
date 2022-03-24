@@ -10,8 +10,9 @@ execute if score @s dmg matches 30.. if entity @s[advancements={demonslayer:defe
 scoreboard players set #ds:temp var1 2
 execute if entity @s[predicate=demonslayer:blood/blood_50,tag=demon_boost] run scoreboard players operation @s dmg /= #ds:temp var1
 
-execute if entity @s[scores={ds_lhit=1..,ds_formtime=0}] run scoreboard players set @s dmg 0
+
 execute if entity @s[predicate=demonslayer:reduction,predicate=core:dmg] at @s run playsound item.shield.break player @a ~ ~ ~
+execute if entity @s[scores={ds_lhit=1..,ds_formtime=0}] run scoreboard players set @s dmg 1
 
 scoreboard players operation @s hurt += @s dmg
 execute as @s[predicate=core:dmg] at @s run function core:damage/init

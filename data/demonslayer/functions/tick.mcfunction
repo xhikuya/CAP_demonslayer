@@ -1,3 +1,4 @@
+tag @a[scores={ability=2},tag=ds_cattack] remove ds_cattack
 execute as @a[tag=started] run function demonslayer:select
 execute as @a[tag=selected_ability,scores={ability=2}] run function demonslayer:selected
 execute as @a[scores={ds_racechoice=1..},tag=!racechosen] run function demonslayer:racechoice

@@ -10,14 +10,14 @@ scoreboard players operation @s ds_motz2 = @s ds_motz
 
 
 ##south
-execute as @s[y_rotation=-45..45,tag=ds_move-z] if predicate core:jump run function demonslayer:breathing/bamboo/backstep
+execute as @s[y_rotation=-45..45,tag=ds_move-z] if predicate core:jump run function demonslayer:breathing/essentials/backstep
 ##east
-execute as @s[y_rotation=-135..-45,tag=ds_move-x] if predicate core:jump run function demonslayer:breathing/bamboo/backstep
+execute as @s[y_rotation=-135..-45,tag=ds_move-x] if predicate core:jump run function demonslayer:breathing/essentials/backstep
 ##north
-execute as @s[y_rotation=-180..-135,tag=ds_move+z] if predicate core:jump run function demonslayer:breathing/bamboo/backstep
-execute as @s[y_rotation=135..180,tag=ds_move+z] if predicate core:jump run function demonslayer:breathing/bamboo/backstep
+execute as @s[y_rotation=-180..-135,tag=ds_move+z] if predicate core:jump run function demonslayer:breathing/essentials/backstep
+execute as @s[y_rotation=135..180,tag=ds_move+z] if predicate core:jump run function demonslayer:breathing/essentials/backstep
 ##west
-execute as @s[y_rotation=45..135,tag=ds_move+x] if predicate core:jump run function demonslayer:breathing/bamboo/backstep
+execute as @s[y_rotation=45..135,tag=ds_move+x] if predicate core:jump run function demonslayer:breathing/essentials/backstep
 
 
 tag @s remove ds_move-x
