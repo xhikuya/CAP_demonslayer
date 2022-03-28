@@ -1,3 +1,4 @@
+execute positioned ~ ~1.5 ~ rotated ~ ~-90 run function demonslayer:breathing/fire/slash_combat/particle_2
 execute positioned ~ ~1.5 ~ rotated ~ ~-75 run function demonslayer:breathing/fire/slash_combat/particle_2
 execute positioned ~ ~1.5 ~ rotated ~ ~-60 run function demonslayer:breathing/fire/slash_combat/particle_2
 execute positioned ~ ~1.5 ~ rotated ~ ~-45 run function demonslayer:breathing/fire/slash_combat/particle_2
@@ -9,3 +10,6 @@ execute positioned ~ ~1.5 ~ rotated ~ ~30 run function demonslayer:breathing/fir
 execute positioned ~ ~1.5 ~ rotated ~ ~45 run function demonslayer:breathing/fire/slash_combat/particle_2
 execute positioned ~ ~1.5 ~ rotated ~ ~60 run function demonslayer:breathing/fire/slash_combat/particle_2
 execute positioned ~ ~1.5 ~ rotated ~ ~75 run function demonslayer:breathing/fire/slash_combat/particle_2
+execute positioned ~ ~1.5 ~ rotated ~ ~90 run function demonslayer:breathing/fire/slash_combat/particle_2
+
+scoreboard players add @s var1 1

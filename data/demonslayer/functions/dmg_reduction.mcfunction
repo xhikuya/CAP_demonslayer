@@ -1,4 +1,6 @@
 
+execute if score @s[tag=!demon_boost] dmg matches 60.. run scoreboard players add @s xp_def 10
+
 scoreboard players set #ds:temp var1 3
 execute if entity @s[advancements={demonslayer:defense/45_def=true},tag=!demon_boost] run scoreboard players operation @s dmg /= #ds:temp var1
 scoreboard players set #ds:temp var1 3

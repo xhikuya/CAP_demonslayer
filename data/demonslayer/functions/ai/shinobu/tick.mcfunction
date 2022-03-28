@@ -10,8 +10,8 @@ scoreboard players add @s[scores={var2=..140,var3=0}] var2 1
 scoreboard players set @s[scores={ds_var2=0}] var1 0 
 execute if entity @s[scores={var1=10..},tag=hit] if entity @a[distance=..30] rotated ~ 0 run particle cloud ^ ^1.5 ^0.1
 execute if entity @s[scores={var1=20..},tag=hit] run function demonslayer:ai/shinobu/choose_move
-execute if entity @s[scores={var1=1},tag=hit] positioned ^ ^ ^1.4 positioned ~2 ~2 ~2 if entity @e[tag=ds_target,dx=-4,dy=-4,dz=-4] at @s run function demonslayer:ai/shinobu/sting
-execute if entity @s[scores={var1=15},tag=hit] positioned ^ ^ ^1.4 positioned ~2 ~2 ~2 if entity @e[tag=ds_target,dx=-4,dy=-4,dz=-4] at @s run function demonslayer:ai/shinobu/sting
+execute if predicate demonslayer:50_chance positioned ^ ^ ^1.4 positioned ~1.2 ~1.2 ~1.2 if entity @e[tag=ds_slash,tag=!ds_owned,dx=-2.4,dy=-2.4,dz=-2.4] run function demonslayer:ai/shinobu/sting
+execute if score @s[scores={ds_formtime=0}] var5 matches 10.. at @s positioned ^ ^ ^1.3 positioned ~1 ~1 ~1 if entity @e[dx=-2,dy=-2,dz=-2,tag=ds_target] run function demonslayer:ai/shinobu/sting
 
 execute as @s[scores={ds_insectform=1,ds_formtime=4..}] at @s run function demonslayer:ai/shinobu/breathing/caprice/tick
 execute as @s[scores={ds_insectform=2,ds_formtime=1..}] at @s run function demonslayer:ai/shinobu/breathing/flut/tick

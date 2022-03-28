@@ -6,3 +6,4 @@ execute unless score @s ds_formtime matches 1.. at @s rotated ~ 0 positioned ^ ^
 playsound minecraft:entity.player.attack.sweep player @a ~ ~ ~
 
 scoreboard players remove @s[tag=ds_demon] var2 5
+scoreboard players set @s var1 0
