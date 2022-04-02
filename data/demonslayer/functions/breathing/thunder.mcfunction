@@ -1,0 +1,1 @@
+execute if predicate demonslayer:breathing/thunder_zeni run function demonslayer:breathing/thunder/zenitsu/main

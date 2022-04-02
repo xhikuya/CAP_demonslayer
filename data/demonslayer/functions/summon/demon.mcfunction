@@ -3,4 +3,5 @@ summon zombie ~ ~ ~ {Health:80.0f,Tags:["ds_demon","custom","ds_new"],Persistenc
 execute if predicate demonslayer:10_chance run item replace entity @e[tag=ds_new] weapon.mainhand with carrot_on_a_stick{CustomModelData:40005,Cap:{Bda:1b,ID:4b},display:{Name:'{"text":"Blood Demon Art(Basic)","italic": false,"color": "red"}'},AttributeModifiers:[{Amount:4,AttributeName:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;1010,1010,1010,1010],Name:"4"}]}
 execute if entity @p[predicate=demonslayer:strong] if predicate demonslayer:25_chance run item replace entity @e[tag=ds_new] weapon.mainhand with carrot_on_a_stick{CustomModelData:40005,Cap:{Bda:1b,ID:4b},display:{Name:'{"text":"Blood Demon Art(Basic)","italic": false,"color": "red"}'},AttributeModifiers:[{Amount:4,AttributeName:"minecraft:generic.attack_damage",Operation:0,Slot:"mainhand",UUID:[I;1010,1010,1010,1010],Name:"4"}]}
 execute if predicate demonslayer:10_chance run function demonslayer:summon/demon/yahaba
+execute if predicate demonslayer:10_chance run function demonslayer:summon/demon/susamaru
 tag @e[tag=ds_new] remove ds_new
