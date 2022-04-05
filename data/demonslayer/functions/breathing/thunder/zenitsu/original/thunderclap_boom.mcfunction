@@ -5,8 +5,6 @@ function demonslayer:breathing/thunder/zenitsu/original/boom
 function demonslayer:breathing/thunder/zenitsu/original/boom
 function demonslayer:breathing/thunder/zenitsu/original/boom
 function demonslayer:breathing/thunder/zenitsu/original/boom
-function demonslayer:breathing/thunder/zenitsu/original/boom
-function demonslayer:breathing/thunder/zenitsu/original/boom
 
 scoreboard players set @s ds_cooldown 20
 execute at @s run playsound entity.generic.explode player @a ~ ~ ~
