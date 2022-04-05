@@ -42,4 +42,4 @@ execute positioned ~ ~1.5 ~ rotated ~ ~75 run particle flame ^ ^ ^2 0.1 0.1 0.1 
 execute positioned ~ ~1.5 ~ rotated ~ ~75 run particle dust 1 0.365 0.114 2 ^ ^ ^2 0.1 0.1 0.1 0 10 normal
 execute positioned ~ ~1.5 ~ rotated ~ ~75 run particle firework ^ ^ ^2 0.1 0.1 0.1 0 2 normal
 
-scoreboard players add @s ds_lhit 13
+scoreboard players add @s ds_lhit 4

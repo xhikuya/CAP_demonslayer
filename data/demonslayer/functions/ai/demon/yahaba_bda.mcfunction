@@ -15,5 +15,5 @@ scoreboard players remove @s[scores={var3=1..}] var3 1
 
 scoreboard players set @s[scores={ds_var2=0}] var1 0 
 execute if score @s ds_bdamove matches 3 if score @s ds_formtime matches 1.. run function demonslayer:demon/bda/yahaba/barrage
-execute unless score @s ds_formtime matches 1.. if score @s var1 matches 100.. if entity @p[distance=2..30] facing entity @p feet run function demonslayer:ai/demon/yahaba_choose
+execute unless score @s ds_formtime matches 1.. if score @s var1 matches 100.. if entity @p[distance=2..30] run function demonslayer:ai/demon/yahaba_choose
 execute if score @s var1 matches 100.. run scoreboard players set @s var1 0

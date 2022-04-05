@@ -1,3 +1,4 @@
+tag @a[scores={ability=2},tag=ds_cattack] remove ds_cattack
 execute as @a[tag=started] run function demonslayer:select
 execute as @a[tag=selected_ability,scores={ability=2}] run function demonslayer:selected
 execute as @a[scores={ds_racechoice=1..},tag=!racechosen] run function demonslayer:racechoice
@@ -30,6 +31,8 @@ scoreboard players add @a ds_formtime 0
 scoreboard players remove @a[scores={ds_formtime=1..}] ds_formtime 1
 scoreboard players add @a ds_lhit 0
 scoreboard players remove @a[scores={ds_lhit=1..}] ds_lhit 1
+scoreboard players add @a ds_backstep 0
+scoreboard players remove @a[scores={ds_backstep=1..}] ds_backstep 1
 scoreboard players add @a ds_cooldown 0
 scoreboard players remove @a[scores={ds_cooldown=1..}] ds_cooldown 1
 scoreboard players add @a ds_ghostswordc 0

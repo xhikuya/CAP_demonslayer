@@ -10,8 +10,6 @@ scoreboard players set @s[scores={ds_waterform=5..,stat_control=15..16},advancem
 scoreboard players set @s[scores={ds_waterform=7..},advancements={demonslayer:slayer/demons/kill_demon50=false}] ds_waterform 1
 
 
-
-
 execute if score @s[scores={ds_swap=6..}] ds_waterform matches 1 run tellraw @s {"text": "First Form: Water Surface Slash","color": "blue"}
 execute if score @s[scores={ds_swap=6..}] ds_waterform matches 2 run tellraw @s {"text": "Second Form: Water Wheel","color": "blue"}
 execute if score @s[scores={ds_swap=6..}] ds_waterform matches 3 run tellraw @s {"text": "Third Form: Flowing Dance","color": "blue"}
@@ -23,7 +21,13 @@ execute if score @s[scores={ds_swap=6..}] ds_waterform matches 7 run tellraw @s 
 
 execute if score @s ds_swap matches 6.. run scoreboard players set @s ds_swap 1
 #>actual moves
+
+
 execute if predicate core:atked run function demonslayer:breathing/water/slash
+execute positioned ^ ^ ^2.6 positioned ~.3 ~.3 ~.3 unless entity @e[dx=-.6,dy=-.6,dz=-.6,tag=!ds_hitbox,type=!#core:non_living,tag=!ds_this] at @s run function demonslayer:breathing/bamboo/hitbox
+execute if entity @s[tag=ds_cattack] at @s run function demonslayer:breathing/water/slash_custom
+
+
 execute if predicate core:click if score @s[scores={stamina=..10,ds_cooldown=0}] ds_waterform matches 1 run tellraw @s "Too Tired"
 execute if predicate core:click if score @s[scores={stamina=11..,ds_cooldown=0}] ds_waterform matches 1 run function demonslayer:breathing/water/surface_slash
 
