@@ -1,10 +1,10 @@
 
 execute store result score @e[tag=ds_this,limit=1] uuid run data get entity @e[tag=ds_this,limit=1] UUID[0]
-execute at @s run summon minecraft:snowball ~ ~2.251 ~ {Tags:["ds_news"]}
+execute at @s run summon minecraft:snowball ~ ~2.251 ~ {Tags:["ds_news"],Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:10}}}
 data modify entity @e[tag=ds_news,limit=1] Owner set from entity @e[tag=ds_this,limit=1] UUID
 tag @e remove ds_news
 
 execute store result score @s uuid run data get entity @s UUID[0]
-summon minecraft:snowball ~ ~2.251 ~ {Tags:["ds_news"]}
+summon minecraft:snowball ~ ~2.251 ~ {Tags:["ds_news"],Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:10}}}
 data modify entity @e[tag=ds_news,limit=1] Owner set from entity @s UUID
 tag @e remove ds_news

@@ -12,6 +12,14 @@
         {
             "condition": "reference",
             "name": "demonslayer:breathing/sun"
+        },
+        {
+            "condition": "reference",
+            "name": "demonslayer:breathing/thunder_zeni"
+        },
+        {
+            "condition": "reference",
+            "name": "demonslayer:breathing/thunder_kai"
         }
     ]
         

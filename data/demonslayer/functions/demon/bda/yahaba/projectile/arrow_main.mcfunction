@@ -1,8 +1,8 @@
 tag @e[tag=ds_this] remove ds_this
 tag @s add ds_this
-execute at @s run tp @s ^ ^ ^0.2
+execute at @s unless entity @s[scores={var4=2,var3=1..}] unless entity @s[scores={var4=2,var3=..-1}] run tp @s ^ ^ ^0.2
 execute unless block ^ ^ ^0.2 #airs run kill @s
-execute at @s run tp @s ^ ^ ^0.2
+execute at @s unless entity @s[scores={var4=2,var3=1..}] unless entity @s[scores={var4=2,var3=..-1}] run tp @s ^ ^ ^0.2
 execute unless block ^ ^ ^0.2 #airs run kill @s
 
 #execute at @s run tp @s ^ ^ ^0.3

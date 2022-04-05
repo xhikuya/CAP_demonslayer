@@ -1,0 +1,3 @@
+execute if predicate demonslayer:breathing/thunder_zeni run function demonslayer:breathing/thunder/zenitsu/main
+execute if predicate demonslayer:breathing/thunder_kai unless data entity @s[predicate=!demonslayer:demon] SelectedItem.tag.Cap.Kaigaku run function demonslayer:breathing/thunder/kaigaku/main
+execute if predicate demonslayer:breathing/thunder_kai if entity @s[predicate=demonslayer:demon] run function demonslayer:breathing/thunder/kaigaku/main

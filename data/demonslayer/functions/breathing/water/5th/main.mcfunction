@@ -1,8 +1,18 @@
 effect give @s slow_falling 1 0 true
-execute as @s at @s if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
-execute as @s at @s if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
-execute as @s at @s if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
-execute as @s at @s if block ^ ^ ^0.1 #movable if block ^ ^1.3 ^.1 #movable run tp @s ^ ^ ^0.1
+execute as @s[x_rotation=-90..-2] at @s if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
+execute as @s[x_rotation=-90..-2] at @s if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
+execute as @s[x_rotation=-90..-2] at @s if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
+execute as @s[x_rotation=-90..-2] at @s if block ^ ^ ^0.1 #movable if block ^ ^1.3 ^.1 #movable run tp @s ^ ^ ^0.1
+
+execute unless entity @s[x_rotation=-90..-2] as @s at @s if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
+execute unless entity @s[x_rotation=-90..-2] as @s at @s if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
+execute unless entity @s[x_rotation=-90..-2] as @s at @s if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
+execute unless entity @s[x_rotation=-90..-2] as @s at @s if block ^ ^ ^0.1 #movable if block ^ ^1.3 ^.1 #movable run tp @s ^ ^ ^0.1
+
+execute unless entity @s[x_rotation=-90..-2] as @s at @s unless block ^ ^ ^0.2 #movable rotated ~ 0 if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
+execute unless entity @s[x_rotation=-90..-2] as @s at @s unless block ^ ^ ^0.2 #movable rotated ~ 0 if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
+execute unless entity @s[x_rotation=-90..-2] as @s at @s unless block ^ ^ ^0.2 #movable rotated ~ 0 if block ^ ^ ^0.2 #movable if block ^ ^1.3 ^.2 #movable run tp @s ^ ^ ^0.2
+execute unless entity @s[x_rotation=-90..-2] as @s at @s unless block ^ ^ ^0.1 #movable rotated ~ 0 if block ^ ^ ^0.1 #movable if block ^ ^1.3 ^.1 #movable run tp @s ^ ^ ^0.1
 
 
 attribute @s generic.movement_speed modifier add b221a289-5d7f-4903-9b4b-cd7baa5719d9 "Water 3rd form" -0.2 multiply
