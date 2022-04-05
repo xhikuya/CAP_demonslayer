@@ -27,6 +27,7 @@ scoreboard objectives add ds_motx dummy
 scoreboard objectives add ds_motz dummy
 scoreboard objectives add ds_motx2 dummy
 scoreboard objectives add ds_motz2 dummy
+scoreboard objectives add ds_backstep dummy
 
 
 scoreboard objectives add ds_cooldown dummy

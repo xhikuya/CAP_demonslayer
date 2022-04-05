@@ -13,4 +13,4 @@ execute rotated ~50 ~ run particle flame ^ ^1.4 ^1.5 0.1 0.1 0.1 0.01 10 normal
 execute rotated ~60 ~ run particle flame ^ ^1.4 ^1.5 0.1 0.1 0.1 0.01 10 normal
 
 
-scoreboard players add @s ds_lhit 13
+scoreboard players add @s ds_lhit 4

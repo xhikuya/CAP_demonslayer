@@ -18,5 +18,5 @@ scoreboard players set @s[scores={ds_var2=0}] var1 0
 
 execute if score @s[tag=!ds_um] var1 matches 60.. if entity @p[distance=2..5] facing entity @p feet run function demonslayer:demon/bda/nezuko/exploding/exploding
 execute if score @s[tag=!ds_um] var1 matches 60.. run scoreboard players set @s var1 0
-execute if score @s[tag=ds_um] var1 matches 30.. if entity @p[distance=2..5] facing entity @p feet run function demonslayer:demon/bda/nezuko/exploding/exploding
+execute if score @s[tag=ds_um] var1 matches 30.. if entity @p[distance=2..20] run function demonslayer:demon/bda/nezuko/exploding/exploding
 execute if score @s[tag=ds_um] var1 matches 30.. run scoreboard players set @s var1 0

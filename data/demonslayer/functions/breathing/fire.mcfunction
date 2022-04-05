@@ -13,6 +13,8 @@ execute if score @s[scores={ds_swap=6..}] ds_fireform matches 3 run tellraw @s {
 execute if score @s ds_swap matches 6.. run scoreboard players set @s ds_swap 1
 #>actual moves
 execute if predicate core:atked at @s run function demonslayer:breathing/fire/slash_chance
+execute positioned ^ ^ ^2.6 positioned ~.3 ~.3 ~.3 unless entity @e[dx=-.6,dy=-.6,dz=-.6,tag=!ds_hitbox,type=!#core:non_living,tag=!ds_this] at @s run function demonslayer:breathing/bamboo/hitbox
+execute if entity @s[tag=ds_cattack] at @s run function demonslayer:breathing/fire/slash_custom
 
 
 execute if predicate core:click if score @s[scores={stamina=..2,ds_cooldown=0,ds_formtime=0}] ds_fireform matches 1 run tellraw @s "Too Tired"
