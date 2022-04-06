@@ -1,0 +1,20 @@
+execute positioned ~ ~1 ~ rotated ~ -90 positioned ^.9 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ -80 positioned ^.8 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ -70 positioned ^.7 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ -60 positioned ^.6 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ -50 positioned ^.5 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ -40 positioned ^.4 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ -30 positioned ^.3 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ -20 positioned ^.2 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ -10 positioned ^.1 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 0 positioned ^ ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 10 positioned ^-.1 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 20 positioned ^-.2 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 30 positioned ^-.3 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 40 positioned ^-.4 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 50 positioned ^-.5 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 60 positioned ^-.6 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 70 positioned ^-.7 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 80 positioned ^-.8 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+execute positioned ~ ~1 ~ rotated ~ 90 positioned ^-.9 ^ ^ run function demonslayer:breathing/nichirin/cattack/hitbox1
+scoreboard players set @s var1 1

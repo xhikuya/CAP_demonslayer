@@ -15,7 +15,7 @@ execute if entity @s[tag=ds_um1] run scoreboard players add @s[scores={var2=..19
 scoreboard players remove @s[scores={var3=1..}] var3 1
 
 scoreboard players set @s[scores={ds_var2=0}] var1 0 
-execute unless score @s ds_cooldown matches 1.. if score @s var1 matches 20.. if entity @p[distance=2..30] facing entity @p feet run function demonslayer:ai/demon/temari_atk
-execute if score @s ds_cooldown matches 44 if predicate demonslayer:50_chance if entity @p[distance=2..30] facing entity @p feet run function demonslayer:ai/demon/temari_atk
+execute unless score @s ds_cooldown matches 1.. if score @s var1 matches 20.. if entity @p[distance=2..15] facing entity @p feet run function demonslayer:ai/demon/temari_atk
+execute if score @s ds_cooldown matches 44 if predicate demonslayer:50_chance if entity @p[distance=2..15] facing entity @p feet run function demonslayer:ai/demon/temari_atk
 
 execute if score @s var1 matches 20.. run scoreboard players set @s var1 0

@@ -1,20 +1,8 @@
 scoreboard players add @s ds_lhit 7
-execute positioned ~ ~.5 ~ rotated ~ ~-90 run particle dust 1 1 1 1.4 ^.9 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~-80 run particle dust 1 1 1 1.4 ^.8 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~-70 run particle dust 1 1 1 1.4 ^.7 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~-60 run particle dust 1 1 1 1.4 ^.6 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~-50 run particle dust 1 1 1 1.4 ^.5 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~-40 run particle dust 1 1 1 1.4 ^.4 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~-30 run particle dust 1 1 1 1.4 ^.3 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~-20 run particle dust 1 1 1 1.4 ^.2 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~-10 run particle dust 1 1 1 1.4 ^.1 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~ run particle dust 1 1 1 1.4 ^ ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~10 run particle dust 1 1 1 1.4 ^-.1 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~20 run particle dust 1 1 1 1.4 ^-.2 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~30 run particle dust 1 1 1 1.4 ^-.3 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~40 run particle dust 1 1 1 1.4 ^-.4 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~50 run particle dust 1 1 1 1.4 ^-.5 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~60 run particle dust 1 1 1 1.4 ^-.6 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~70 run particle dust 1 1 1 1.4 ^-.7 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~80 run particle dust 1 1 1 1.4 ^-.8 ^ ^1.8 0 0 0 0.01 2 normal
-execute positioned ~ ~.5 ~ rotated ~ ~90 run particle dust 1 1 1 1.4 ^-.9 ^ ^1.8 0 0 0 0.01 2 normal
+scoreboard players set @s var1 0
+execute if predicate demonslayer:20_chance unless score @s var1 matches 1.. rotated ~ 0 positioned ~ ~.4 ~ run function demonslayer:breathing/nichirin/atk1
+execute if predicate demonslayer:20_chance unless score @s var1 matches 1.. rotated ~ 0 positioned ~ ~ ~ run function demonslayer:breathing/nichirin/atk2
+execute if predicate demonslayer:20_chance unless score @s var1 matches 1.. rotated ~ 0 positioned ~ ~ ~ run function demonslayer:breathing/nichirin/atk3
+execute if predicate demonslayer:20_chance unless score @s var1 matches 1.. rotated ~ 0 positioned ~ ~-.1 ~ run function demonslayer:breathing/nichirin/atk4
+execute unless score @s var1 matches 1.. rotated ~ 0 positioned ~ ~ ~ run function demonslayer:breathing/nichirin/atk1
+#item modify entity @s weapon.mainhand demonslayer:fix

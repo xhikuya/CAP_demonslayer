@@ -7,6 +7,8 @@ scoreboard players add @s var2 0
 scoreboard players add @s var3 0
 scoreboard players add @s var4 1
 scoreboard players add @s var5 1
+scoreboard players add @s var6 1
+
 execute if entity @s[scores={ds_ait=0}] run scoreboard players set @s var1 0
 scoreboard players add @s ds_lhit 0
 scoreboard players add @s ds_ait 0

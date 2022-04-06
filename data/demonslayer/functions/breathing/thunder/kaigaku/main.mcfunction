@@ -17,6 +17,9 @@ execute if score @s[scores={ds_swap=8..}] ds_thunderform matches 5 run tellraw @
 execute if score @s ds_swap matches 8.. run scoreboard players set @s ds_swap 1
 #>actual moves
 execute if predicate core:atked at @s run function demonslayer:breathing/attack
+execute positioned ^ ^ ^2.6 positioned ~.3 ~.3 ~.3 unless entity @e[dx=-.6,dy=-.6,dz=-.6,tag=!ds_hitbox,type=!#core:non_living,tag=!ds_this] at @s run function demonslayer:breathing/bamboo/hitbox
+execute if entity @s[tag=ds_cattack] at @s run function demonslayer:breathing/attack2
+
 #>Second Form
     execute if predicate core:click if score @s[scores={stamina=..19,ds_cooldown=0}] ds_thunderform matches 1 run tellraw @s "Too Tired"
     execute if predicate core:click if score @s[scores={stamina=20..,ds_cooldown=0}] ds_thunderform matches 1 run function demonslayer:breathing/thunder/kaigaku/second_form/init
