@@ -20,8 +20,6 @@ execute as @a[nbt={SelectedItem:{tag:{Cap:{Nichirin:1b}}}}] at @s run function d
 execute as @a[nbt={SelectedItem:{tag:{Cap:{Bamboo:1b}}}}] at @s run function demonslayer:breathing/bamboo/main
 
 
-execute as @a[tag=demon_boost,predicate=demonslayer:blooddemonart] at @s run function demonslayer:demon/bda/main
-
 execute as @e[tag=ds_tanjiro] at @s if entity @a[distance=..80] run function demonslayer:ai/tanjiro/tick
 execute as @e[tag=ds_shinobu] at @s if entity @a[distance=..80] run function demonslayer:ai/shinobu/tick
 execute as @e[tag=ds_training] at @s if entity @a[distance=..30] run function demonslayer:ai/training/tick

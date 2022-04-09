@@ -1,0 +1,1 @@
+execute anchored eyes positioned ^ ^ ^1.9 positioned ~.2 ~.2 ~.2 unless entity @e[dx=-.4,dy=-.4,dz=-.4,tag=!ds_hitbox,type=!#core:non_living,tag=!ds_this] at @s run function demonslayer:breathing/bamboo/hitbox

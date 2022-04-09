@@ -15,7 +15,7 @@ execute at @s[scores={ds_wist_tick=0}] if block ~ ~ ~ lilac run scoreboard playe
 execute as @s[scores={ds_wisteria=1..}] at @s run function demonslayer:demon/wisteria
 scoreboard players add @s[scores={ds_wist_break=1..}] ds_wisteria 40
 execute as @s[predicate=core:sneak,scores={ds_cooldown=0,stamina=58..},nbt={SelectedItemSlot:8}] run function demonslayer:demon/regen
-execute as @s[advancements={demonslayer:demon/blood_15=true},nbt={SelectedItemSlot:7}] run function demonslayer:demon/bda/main
+execute as @s[advancements={demonslayer:demon/blood_15=true},nbt=!{SelectedItemSlot:8}] run function demonslayer:demon/bda/main
 execute as @s[tag=checked_stats] run tellraw @s [{"text":"Blood: ","color": "dark_red"},{"score":{"name": "@s","objective": "ds_blood"}}]
 #>atk
 execute if entity @s[predicate=core:atked,scores={stamina=3..}] run scoreboard players add @s stamina_cool 20

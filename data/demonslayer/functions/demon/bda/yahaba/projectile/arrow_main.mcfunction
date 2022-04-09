@@ -4,7 +4,7 @@ execute at @s unless entity @s[scores={var4=2,var3=1..}] unless entity @s[scores
 execute unless block ^ ^ ^0.2 #airs run kill @s
 execute at @s unless entity @s[scores={var4=2,var3=1..}] unless entity @s[scores={var4=2,var3=..-1}] run tp @s ^ ^ ^0.2
 execute unless block ^ ^ ^0.2 #airs run kill @s
-
+execute at @s if entity @s[scores={var4=2,var3=1..}] unless block ~ ~1 ~ #airs run kill @s
 #execute at @s run tp @s ^ ^ ^0.3
 #execute unless block ^ ^ ^0.4 #airs run kill @s
 execute if entity @s[tag=!proj_hit] positioned ~-.5 ~-0.3 ~-.5 as @e[dx=1,dz=1,dy=.6,tag=!projectile,tag=!immune,tag=!ds_hitbox,tag=!ds_slash] run tag @s add hit_check

@@ -24,7 +24,7 @@ execute if score @s ds_swap matches 6.. run scoreboard players set @s ds_swap 1
 
 
 execute if predicate core:atked run function demonslayer:breathing/water/slash
-execute positioned ^ ^ ^2.6 positioned ~.3 ~.3 ~.3 unless entity @e[dx=-.6,dy=-.6,dz=-.6,tag=!ds_hitbox,type=!#core:non_living,tag=!ds_this] at @s run function demonslayer:breathing/bamboo/hitbox
+function demonslayer:breathing/essentials/hitbox
 execute if entity @s[tag=ds_cattack] at @s run function demonslayer:breathing/water/slash_custom
 
 

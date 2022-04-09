@@ -18,8 +18,8 @@ execute as @s[scores={ds_waterform=1,ds_formtime=1}] at @s rotated ~ 0 run funct
 
 execute as @e[distance=..10,tag=ds_slash] if score @s projowner = @e[tag=ds_this,limit=1,sort=nearest] uuid run tag @s add ds_owned
 
-execute if score @s[scores={ds_formtime=0}] var6 matches 1..5 if predicate demonslayer:75_chance positioned ^ ^ ^2 positioned ~1.5 ~1.5 ~1.5 if entity @e[tag=ds_slash,tag=!ds_owned,dx=-3,dy=-3,dz=-3] at @s run function demonslayer:ai/tanjiro/breathing/slice/init
-execute if score @s[scores={ds_formtime=0}] var5 matches 10.. at @s positioned ^ ^ ^1.6 positioned ~1.3 ~1.3 ~1.3 if entity @e[dx=-2.6,dy=-2.6,dz=-2.6,tag=ds_target] at @s run function demonslayer:ai/tanjiro/breathing/slice/init
+execute if score @s[scores={ds_formtime=0}] var6 matches 1..2 if predicate demonslayer:75_chance positioned ^ ^ ^2 positioned ~1.5 ~1.5 ~1.5 if entity @e[tag=ds_slash,tag=!ds_owned,dx=-3,dy=-3,dz=-3] at @s run function demonslayer:ai/tanjiro/breathing/slice/init
+execute if score @s[scores={ds_formtime=0}] var5 matches 8.. at @s positioned ^ ^ ^2 positioned ~1.5 ~1.5 ~1.5 if entity @e[dx=-3,dy=-3,dz=-3,tag=ds_target] at @s run function demonslayer:ai/tanjiro/breathing/slice/init
 tag @e remove ds_owned
 execute as @s[scores={ds_waterform=2,ds_formtime=2}] at @s rotated ~ 0 run function demonslayer:ai/tanjiro/breathing/wheel_2
 execute as @s[scores={ds_waterform=6,ds_formtime=1..}] at @s rotated ~ 0 run function demonslayer:ai/tanjiro/breathing/whirlpool/main
@@ -35,8 +35,8 @@ execute if entity @s[nbt={HurtTime:10s},scores={ds_ait=0}] run function demonsla
 execute if block ~ ~0.5 ~ water run tp @s ~ ~0.01 ~
 scoreboard players set @s[scores={var4=81..}] var4 0 
 
-scoreboard players set @s[scores={var5=10..}] var5 0
-scoreboard players set @s[scores={var6=10..}] var6 0
+scoreboard players set @s[scores={var5=8..}] var5 0
+scoreboard players set @s[scores={var6=6..}] var6 0
 
 tag @s remove ds_this
 tag @e[tag=ds_target] remove ds_target

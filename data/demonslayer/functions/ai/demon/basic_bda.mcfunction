@@ -7,7 +7,7 @@ scoreboard players add @s ds_formtime 0
 scoreboard players add @s var1 1
 execute unless score @s var2 matches -1.. run scoreboard players set @s var2 100
 scoreboard players add @s var3 0
-scoreboard players remove @s[scores={ds_lhit=1..}] ds_lhit 1
+
 execute as @e[distance=..10,tag=ds_slash] if score @s projowner = @e[tag=ds_this,limit=1,sort=nearest] uuid run tag @s add ds_owned
 
 execute if predicate demonslayer:50_chance positioned ^ ^ ^1.4 positioned ~1.2 ~1.2 ~1.2 if entity @e[tag=ds_slash,tag=!ds_owned,dx=-2.4,dy=-2.4,dz=-2.4] run function demonslayer:ai/demon/basic_atk
