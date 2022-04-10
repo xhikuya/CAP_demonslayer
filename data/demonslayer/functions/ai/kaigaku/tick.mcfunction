@@ -17,6 +17,10 @@ execute as @s[scores={ds_thunderform=3,ds_formtime=1..}] at @s rotated ~ 0 run f
 execute as @s[scores={ds_thunderform=5,ds_formtime=1..}] at @s rotated ~ 0 run function demonslayer:ai/kaigaku/thunder/fifth_form/main
 attribute @s[scores={ds_formtime=0}] generic.movement_speed modifier remove b607e8d0-bd75-4930-9475-17f935eeb919
 
+
+execute as @e[distance=..10,tag=ds_slash] if score @s projowner = @e[tag=ds_this,limit=1,sort=nearest] uuid run tag @s add ds_owned
+execute if score @s[scores={ds_formtime=0}] var6 matches 1..2 if predicate demonslayer:75_chance positioned ^ ^ ^2 positioned ~1.5 ~1.5 ~1.5 if entity @e[tag=ds_slash,tag=!ds_owned,dx=-3,dy=-3,dz=-3] at @s run function demonslayer:breathing/attack2
+execute if score @s[scores={ds_formtime=0}] var5 matches 8.. at @s positioned ^ ^ ^2 positioned ~1.5 ~1.5 ~1.5 if entity @e[dx=-3,dy=-3,dz=-3,tag=ds_target] at @s run function demonslayer:breathing/attack2
 #execute as @s[scores={ds_waterform=1,ds_formtime=1}] at @s rotated ~ 0 run function demonslayer:ai/tanjiro/breathing/surface_slash
 
 #execute as @s[scores={ds_waterform=2,ds_formtime=2}] at @s rotated ~ 0 run function demonslayer:ai/tanjiro/breathing/wheel_2
