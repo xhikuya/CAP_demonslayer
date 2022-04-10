@@ -1,0 +1,1 @@
+execute at @e[distance=0.4..33] run function demonslayer:health_check
