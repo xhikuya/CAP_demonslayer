@@ -1,2 +1,2 @@
 execute unless predicate demonslayer:breathing if predicate demonslayer:sword run item modify entity @s weapon.mainhand demonslayer:insect
-advancement revoke @s only demonslayer:slayer/insect_breathing2
+advancement revoke @s only demonslayer:slayer/learn/insect_breathing2

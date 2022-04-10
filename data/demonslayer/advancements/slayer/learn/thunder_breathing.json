@@ -1,0 +1,49 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_nugget",
+            "nbt": "{CustomModelData:40002}"
+        },
+        "title": "Training(Kaigaku)",
+        "description": "Train with Kaigaku and learn Thunder breathing!",
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "challenge",
+        "show_toast": true
+    },
+    "parent": "demonslayer:slayer/training",
+    "criteria":{
+        "hi":{
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2
+                        }
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "tag": "demonslayer:swords"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "entity": {
+                    "nbt": "{Tags:[\"ds_kaigaku\",\"ds_slayer\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "demonslayer:slayer/learn_thunderbreathing"
+    }
+}

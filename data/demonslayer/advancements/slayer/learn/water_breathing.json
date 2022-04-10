@@ -2,10 +2,10 @@
     "display": {
         "icon": {
             "item": "minecraft:player_head",
-            "nbt": "{HeadID:1b,SkullOwner:{Id:[I;1526237022,-1390731569,-1690192039,996220705],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY0NjAwMzE2MjU1OSwKICAicHJvZmlsZUlkIiA6ICIwMTVmMmFiYWYyNjE0NjhkYjI5MjI4Y2Q4MTZmNmEwNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJ4aGlrdXlhIiwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVjYTk5YjNkNmVhYWNiZjZiZmQzOTY0NzYzMzYwYTViNzA3MjA3NjQ3MjA4OTZiMTJlOTBjN2EzOWJkZDY0ODQiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==\"}]}}}"
+            "nbt": "{SkullOwner:{Id:[I;1226237022,-1390131569,-1690162039,996224705],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTA5MzIzMmFlYTQ5NjAwYjUwOTJmYzE4MmUwZDVjZTg5OTlmNzgwNDVkZDdiZGEyM2M2NWNjYTZmY2Y1Y2Y2MCJ9fX0=\"}]}}}"
         },
-        "title": "Training(Shinobu)",
-        "description": "Train with shinobu and learn insect breathing!",
+        "title": "Sparring(Tanjiro)",
+        "description": "Spar with Tanjiro and learn water breathing!",
         "announce_to_chat": true,
         "hidden": false,
         "frame": "challenge",
@@ -37,13 +37,13 @@
                     }
                 ],
                 "entity": {
-                    "nbt": "{Tags:[\"ds_shinobu\"]}"
+                    "nbt": "{Tags:[\"ds_tanjiro\"]}"
                 }
             }
         }
     },
     "rewards": {
         "experience": 100,
-        "function": "demonslayer:slayer/learn_insectbreathing"
+        "function": "demonslayer:slayer/learn_waterbreathing"
     }
 }

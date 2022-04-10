@@ -1,0 +1,52 @@
+{
+    "criteria":{
+        "hi":{
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_properties",
+                        "predicate":{
+                            "entity": "this",
+                            "player": {
+                                "advancements": {
+                                    "demonslayer:root":true
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "entity":"this",
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "nbt": "{Tags:[\"demon_boost\"]}"
+                            }
+                        }
+                    }
+                ],
+                "entity": [
+                    {
+                        "condition": "alternative",
+                        "terms": [
+                            {
+                                "condition":"entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{Tags:[\"ds_demon\",\"ds_kizuki\"]}"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "demonslayer:slayer/kill_kizuki"
+    }
+}
