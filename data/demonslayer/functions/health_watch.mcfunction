@@ -1,1 +1,1 @@
-execute at @e[distance=0.4..33] run function demonslayer:health_check
+execute at @e[distance=0.4..33,tag=!ds_hitbox,type=!#core:non_living,tag=!projectile] run function demonslayer:health_check

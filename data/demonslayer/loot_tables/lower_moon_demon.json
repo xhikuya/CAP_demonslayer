@@ -7,22 +7,6 @@
                 {
                     "weight": 1,
                     "type": "minecraft:item",
-                    "name": "minecraft:spider_eye",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\": \"Muzan Blood\",\"italic\": false}'},Muzan:1b}"
-                        },
-                        {
-                            "function": "set_count",
-                            "count": 3,
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "weight": 1,
-                    "type": "minecraft:item",
                     "name": "minecraft:carrot_on_a_stick",
                     "functions": [
                         {
@@ -34,6 +18,28 @@
                         {
                             "condition": "random_chance",
                             "chance": 0.1
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "weight": 1,
+                    "type": "minecraft:item",
+                    "name": "minecraft:spider_eye",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Muzan Blood\",\"italic\": false}'},Muzan:1b}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 3,
+                            "add": false
                         }
                     ]
                 }

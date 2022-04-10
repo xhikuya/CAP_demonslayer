@@ -36,20 +36,10 @@
                                 "condition":"entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "nbt": "{Tags:[\"ds_demon\"]}"
+                                    "nbt": "{Tags:[\"ds_demon\",\"ds_kizuki\"]}"
                                 }
                             }
                         ]
-                    },
-                    {
-                        "condition":"inverted",
-                        "term": {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                            "nbt": "{Tags:[\"ds_kizuki\"]}"
-                            }
-                        }
                     }
                 ]
             }
@@ -57,6 +47,6 @@
     },
     "rewards": {
         "experience": 100,
-        "function": "demonslayer:slayer/kill_demon"
+        "function": "demonslayer:slayer/kill_kizuki"
     }
 }

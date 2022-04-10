@@ -36,7 +36,7 @@ attribute @s[scores={ds_formtime=0}] generic.movement_speed modifier remove b607
 
 
 tag @s add cdamage
-execute if entity @s[predicate=core:dmg] run function demonslayer:ai/tanjiro/dmg_reduction
+execute if entity @s[predicate=core:dmg] run function demonslayer:ai/kaigaku/damage_reduction
 execute if score @s var4 matches 80 unless entity @e[tag=ds_target,distance=..100] run function demonslayer:ai/slayer_core/reset_target
 execute if entity @s[scores={ds_ait=0,var4=80}] if entity @e[distance=..30,predicate=demonslayer:human] run function demonslayer:ai/kaigaku/demon/find_target
 execute if entity @s[nbt={HurtTime:10s},scores={ds_ait=0}] run function demonslayer:ai/slayer_core/nhit

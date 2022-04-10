@@ -6,8 +6,7 @@ effect give @s[scores={ds_wist_tick=10..}] slowness 3 5 true
 effect clear @s[scores={ds_wist_tick=10..}] regeneration
 scoreboard players set @s[scores={ds_wist_tick=20..}] ds_wist_tick 1
 scoreboard players remove @s[scores={ds_wisteria=1..}] ds_wisteria 1
-scoreboard players remove @s[scores={ds_wisteria=1..},tag=ds_lm] ds_wisteria 1
-scoreboard players remove @s[scores={ds_wisteria=3..},tag=ds_um] ds_wisteria 3
+scoreboard players remove @s[scores={ds_wisteria=1..},tag=ds_kizuki] ds_wisteria 1
 
 scoreboard players remove @s[scores={ds_wisteria=1..},advancements={demonslayer:demon/blood_25_lm=true,demonslayer:demon/blood_45_um=false}] ds_wisteria 1
 scoreboard players remove @s[scores={ds_wisteria=3..},advancements={demonslayer:demon/blood_45_um=true}] ds_wisteria 3
