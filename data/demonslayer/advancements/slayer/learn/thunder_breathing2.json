@@ -1,0 +1,36 @@
+{
+    "criteria":{
+        "hi":{
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": [
+                    {
+                        "entity": "this",
+                        "condition": "entity_scores",
+                        "scores": {
+                            "ability":2
+                        }
+                    },
+                    {
+                        "condition":"entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "player": {
+                                "advancements": {
+                                    "demonslayer:slayer/learn/thunder_breathing":true
+                                }
+                            }
+                        }
+                    }
+                ],
+                "entity": {
+                    "nbt": "{Tags:[\"ds_kaigaku\",\"ds_slayer\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 20,
+        "function": "demonslayer:slayer/learn_thunderbreathing"
+    }
+}
