@@ -3,6 +3,8 @@
 #var3 - stamina cool
 
 scoreboard players add @s ds_cooldown 0
+scoreboard players add @s ds_formtime 0
+
 scoreboard players add @s var2 0
 scoreboard players add @s var3 0
 scoreboard players add @s var4 1
