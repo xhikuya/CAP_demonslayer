@@ -23,6 +23,7 @@ execute if score @s[scores={ds_swap=6..}] ds_waterform matches 7 run tellraw @s 
 execute if score @s ds_swap matches 6.. run scoreboard players set @s ds_swap 1
 #>actual moves
 execute if predicate core:atked run function demonslayer:breathing/water/slash
+
 execute if predicate core:click if score @s[scores={stamina=..10,ds_cooldown=0}] ds_waterform matches 1 run tellraw @s "Too Tired"
 execute if predicate core:click if score @s[scores={stamina=11..,ds_cooldown=0}] ds_waterform matches 1 run function demonslayer:breathing/water/surface_slash
 

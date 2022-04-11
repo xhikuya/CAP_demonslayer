@@ -13,7 +13,7 @@ execute if score @s[scores={ds_swap=6..}] ds_fireform matches 3 run tellraw @s {
 execute if score @s ds_swap matches 6.. run scoreboard players set @s ds_swap 1
 #>actual moves
 execute if predicate core:atked at @s run function demonslayer:breathing/fire/slash_chance
-execute unless predicate demonslayer:breathing
+function demonslayer:breathing/essentials/hitbox
 execute if entity @s[tag=ds_cattack] at @s run function demonslayer:breathing/fire/slash_custom
 
 

@@ -1,5 +1,5 @@
 scoreboard players remove @a[scores={ds_sleepcool=1..}] ds_sleepcool 1
-execute at @s if predicate core:sneak if block ~ ~ ~ #beds unless score @s ds_sleepcool matches 1.. run function demonslayer:demon/time_progress
+execute at @s if predicate core:sneak if block ~ ~ ~ #beds unless score @s ds_sleepcool matches 667.. run function demonslayer:demon/time_progress
 tag @s add cdamage
 
 execute if entity @s[nbt={HurtTime:10s},predicate=demonslayer:reduction] at @s run playsound item.shield.break player @a ~ ~ ~

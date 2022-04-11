@@ -37,5 +37,8 @@ execute if block ~ ~0.5 ~ water run tp @s ~ ~0.01 ~
 scoreboard players set @s[scores={var4=81..}] var4 0 
 
 
+scoreboard players set @s[scores={var5=7..}] var5 0
+scoreboard players set @s[scores={var6=6..}] var6 0
+
 tag @s remove ds_this
 tag @e[tag=ds_target] remove ds_target
