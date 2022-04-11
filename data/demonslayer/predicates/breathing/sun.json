@@ -8,7 +8,7 @@
                 "equipment": {
                     "mainhand": {
                         "tag": "demonslayer:swords",
-                        "nbt": "{Cap:{Firebreathing:1b}}"
+                        "nbt": "{Cap:{Sunbreathing:1b}}"
                     }
                 }
             }

@@ -5,8 +5,9 @@ execute if entity @s[predicate=demonslayer:30_chance] run particle sweep_attack 
 tag @s add ds_this
 function demonslayer:ai/kaigaku/thunder/fifth_form/damage
 tag @s add immune
-execute positioned ^ ^ ^2 positioned ~1 ~1 ~1 as @e[tag=!immune,type=!#core:non_living,dx=-2,dz=-2,dy=-2,predicate=!core:dmg,nbt=!{HurtTime:10s}] run scoreboard players operation @s dmg = #ds:temp var1
-execute if entity @s[predicate=demonslayer:demon] positioned ^ ^ ^2 positioned ~.7 ~.7 ~.7 as @e[tag=!immune,type=!#core:non_living,dx=-1.4,dz=-1.4,dy=-1.4,predicate=core:dmg] run effect give @s wither 5 4 true
+execute unless entity @s[predicate=demonslayer:demon] positioned ^ ^ ^2 positioned ~1 ~1 ~1 as @e[tag=!immune,type=!#core:non_living,dx=-2,dz=-2,dy=-2,predicate=!core:dmg,nbt=!{HurtTime:10s},predicate=demonslayer:target_slayer] run scoreboard players operation @s dmg = #ds:temp var1
+execute if entity @s[predicate=demonslayer:demon] positioned ^ ^ ^2 positioned ~1 ~1 ~1 as @e[tag=!immune,type=!#core:non_living,dx=-2,dz=-2,dy=-2,predicate=!core:dmg,nbt=!{HurtTime:10s},predicate=demonslayer:target_demon] run scoreboard players operation @s dmg = #ds:temp var1
+execute if entity @s[predicate=demonslayer:demon] positioned ^ ^ ^2 positioned ~.7 ~.7 ~.7 as @e[tag=!immune,type=!#core:non_living,dx=-1.4,dz=-1.4,dy=-1.4,predicate=core:dmg,predicate=demonslayer:target_demon] run effect give @s wither 5 4 true
 execute positioned ^ ^ ^2 positioned ~1 ~1 ~1 as @e[tag=!immune,type=!#core:non_living,dx=-2,dz=-2,dy=-2,predicate=core:dmg] at @s facing entity @e[tag=ds_this,limit=1,sort=nearest] feet run function demonslayer:ai/kaigaku/thunder/fifth_form/knockback
 
 

@@ -1,0 +1,16 @@
+{
+    "condition": "alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{\"ds_target\"}"
+            }
+        },
+        {
+            "condition":"reference",
+            "name": "demonslayer:demon"
+        }
+    ]
+}

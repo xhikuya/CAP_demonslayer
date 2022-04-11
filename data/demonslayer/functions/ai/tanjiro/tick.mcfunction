@@ -25,7 +25,11 @@ execute if entity @s[predicate=core:dmg] run function demonslayer:ai/tanjiro/dmg
 execute if score @s var4 matches 80 unless entity @e[tag=ds_target,distance=..100] run function demonslayer:ai/slayer_core/reset_target
 execute if entity @s[scores={ds_ait=0,var4=80}] if entity @e[distance=..30,predicate=demonslayer:demon] run function demonslayer:ai/slayer_core/find_target
 execute if entity @s[nbt={HurtTime:10s},scores={ds_ait=0}] run function demonslayer:ai/slayer_core/nhit
-execute if block ~ ~0.5 ~ water run tp @s ~ ~0.01 ~
+
+execute if block ~ ~.8 ~ water run tag @s add bobber
+execute if entity @s[tag=bobber] run function demonslayer:ai/water_swim
+execute unless block ~ ~-0.1 ~ water run tag @s remove bobber
+
 scoreboard players set @s[scores={var4=81..}] var4 0 
 
 
