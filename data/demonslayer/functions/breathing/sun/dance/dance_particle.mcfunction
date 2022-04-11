@@ -1,0 +1,43 @@
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-75 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-75 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-75 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-60 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-60 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-60 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-45 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-45 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-45 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-30 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-30 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-30 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-15 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-15 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~-15 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~ run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 2 positioned ~ ~1.5 ~ rotated ~ ~ run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~ run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~15 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~15 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~15 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~30 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~30 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~30 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~45 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~45 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~45 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~60 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~60 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~60 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal
+
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~75 run particle flame ^ ^ ^3 0.1 0.1 0.1 0 20 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~75 run particle dust 1 0.365 0.114 2 ^ ^ ^2.5 0.1 0.1 0.1 0 10 normal
+execute if score @s ds_formtime matches 1 positioned ~ ~1.5 ~ rotated ~ ~75 run particle firework ^ ^ ^3.5 0.1 0.1 0.1 0 10 normal

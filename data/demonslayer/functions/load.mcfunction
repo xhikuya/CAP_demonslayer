@@ -17,7 +17,7 @@ scoreboard objectives add ds_sleepcool dummy
 
 scoreboard objectives add ds_insectform dummy
 scoreboard objectives add ds_waterform dummy
-scoreboard objectives add ds_fireform dummy
+scoreboard objectives add ds_sunform dummy
 scoreboard objectives add ds_thunderform dummy
 
 

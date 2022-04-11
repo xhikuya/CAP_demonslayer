@@ -1,0 +1,10 @@
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4
+execute rotated ~ 0 facing entity @e[tag=ds_this,limit=1] feet if block ^ ^0.2 ^-0.4 #airs run tp @s ^ ^0.2 ^-0.4

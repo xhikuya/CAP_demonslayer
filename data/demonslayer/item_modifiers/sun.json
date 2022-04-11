@@ -21,7 +21,7 @@
     },
     {
         "function": "minecraft:set_nbt",
-        "tag": "{Cap:{Firebreathing:1b}}"
+        "tag": "{Cap:{Sunbreathing:1b}}"
     },
     {
         "function": "set_enchantments",

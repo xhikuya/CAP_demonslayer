@@ -42,7 +42,7 @@ execute if predicate core:click if score @s[scores={stamina=16..,ds_cooldown=0}]
 execute if predicate core:click if score @s[scores={stamina=..23,ds_cooldown=0}] ds_waterform matches 6 run tellraw @s "Too Tired"
 execute if predicate core:click if score @s[scores={stamina=24..,ds_cooldown=0}] ds_waterform matches 6 run function demonslayer:breathing/water/8th/init
 
-execute if predicate core:click if score @s ds_waterform matches 7 run function demonslayer:breathing/fire/tanj_switch
+execute if predicate core:click if score @s ds_waterform matches 7 run function demonslayer:breathing/sun/tanj_switch
 
 #> yes
 
