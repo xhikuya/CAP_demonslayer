@@ -25,6 +25,9 @@ execute if score @s[scores={ds_swap=6..}] ds_sunform matches 10 run tellraw @s {
 execute if score @s ds_swap matches 6.. run scoreboard players set @s ds_swap 1
 #>actual moves
 execute if predicate core:atked at @s run function demonslayer:breathing/sun/slash_chance
+function demonslayer:breathing/essentials/hitbox
+execute if entity @s[tag=ds_cattack] at @s run function demonslayer:breathing/sun/slash_custom
+
 
 
 execute if predicate core:click if score @s[scores={stamina=..2,ds_cooldown=0,ds_formtime=0}] ds_sunform matches 1 run tellraw @s "Too Tired"

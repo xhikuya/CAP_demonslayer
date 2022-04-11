@@ -1,4 +1,4 @@
-function demonslayer:breathing/fire/dmg_m1
+function demonslayer:breathing/sun/dmg_m1
 
 execute store result score @s uuid run data get entity @s UUID[0]
 execute rotated ~ 0 run summon area_effect_cloud ~ ~ ~ {Duration:10,Radius:0,RadiusPerTick:0,Tags:["ds_slash","ds_proj","ds_slew"]}
