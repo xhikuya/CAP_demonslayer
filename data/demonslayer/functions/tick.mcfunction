@@ -5,6 +5,7 @@ execute as @a[scores={ds_racechoice=1..},tag=!racechosen] run function demonslay
 
 execute as @a[scores={ability=2,stat_power=13..}] run scoreboard players remove @s stat_power 1
 execute as @a[scores={ability=2}] if predicate core:dmg run function demonslayer:dmg_reduction
+execute as @a[scores={ability=2},predicate=core:macro] run scoreboard players enable @s backstep_macro
 
 execute as @a[scores={ds_death=1..,ability=2}] at @s run function demonslayer:dead
 execute as @a[scores={ability=2},tag=!demon_boost] run function demonslayer:main_slayer
@@ -33,6 +34,8 @@ scoreboard players add @a ds_formtime 0
 scoreboard players remove @a[scores={ds_formtime=1..}] ds_formtime 1
 scoreboard players add @a ds_lhit 0
 scoreboard players remove @a[scores={ds_lhit=1..}] ds_lhit 1
+scoreboard players remove @a[scores={backstep_macro=1..}] backstep_macro 1
+
 scoreboard players add @a ds_backstep 0
 scoreboard players remove @a[scores={ds_backstep=1..}] ds_backstep 1
 scoreboard players add @a ds_cooldown 0

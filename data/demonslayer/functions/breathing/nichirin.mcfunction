@@ -7,7 +7,8 @@ execute if entity @s[predicate=core:macro,predicate=core:shift_click] run scoreb
 
 execute if predicate demonslayer:1_chance positioned ~ ~1.4 ~ positioned ^ ^ ^.4 run particle dust 1 1 1 2 ~ ~ ~ 0 0 0 0.05 1 normal
 execute if predicate demonslayer:1_chance positioned ~ ~1.4 ~ positioned ^ ^ ^.4 run particle dust 1 1 1 1 ~ ~ ~ 0 0 0 0.05 1 normal
-function demonslayer:breathing/essentials/moving_back
+execute unless predicate core:macro run function demonslayer:breathing/essentials/moving_back
+execute if predicate core:macro run function demonslayer:breathing/essentials/moving_back2
 
 execute if predicate core:macro if predicate core:shift_click run scoreboard players set @s ds_swap 7
 execute if predicate core:macro if predicate core:shift_click run scoreboard players set @s s_click 0

@@ -1,4 +1,4 @@
-scoreboard players add @s ds_lhit 7
+
 scoreboard players set @s var1 0
 execute if predicate demonslayer:25_chance unless score @s var1 matches 1.. rotated ~ 0 positioned ~ ~.4 ~ run function demonslayer:breathing/nichirin/cattack/atk1
 execute if predicate demonslayer:25_chance unless score @s var1 matches 1.. rotated ~ 0 positioned ~ ~ ~ run function demonslayer:breathing/nichirin/cattack/atk2
