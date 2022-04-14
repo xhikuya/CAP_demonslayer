@@ -1,3 +1,4 @@
+effect give @s slow_falling 1 20 true
 execute if score @s ds_formtime matches 2.. at @s run particle dust 1 1 1 3 ~ ~1 ~ 0.6 0.6 0.6 0.5 30
 execute if score @s ds_formtime matches 1 run function demonslayer:breathing/sun/fake_rainbow/teleport
 
