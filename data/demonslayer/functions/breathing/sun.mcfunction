@@ -15,7 +15,7 @@ execute if score @s[scores={ds_swap=6..}] ds_sunform matches 2 run tellraw @s {"
 execute if score @s[scores={ds_swap=6..}] ds_sunform matches 3 run tellraw @s {"text": "Third Form: Raging Sun","color": "red"}
 execute if score @s[scores={ds_swap=6..}] ds_sunform matches 4 run tellraw @s {"text": "Fourth Form: Burning bones, Summer sun","color": "red"}
 execute if score @s[scores={ds_swap=6..}] ds_sunform matches 5 run tellraw @s {"text": "Fifth Form: Sunflower Thrust","color": "red"}
-execute if score @s[scores={ds_swap=6..}] ds_sunform matches 6 run tellraw @s {"text": "Sixth Form: Dragon Sun Halo Dance","color": "red"}
+execute if score @s[scores={ds_swap=6..}] ds_sunform matches 6 run tellraw @s {"text": "Sixth Form: Fake Rainbow","color": "red"}
 execute if score @s[scores={ds_swap=6..}] ds_sunform matches 7 run tellraw @s {"text": "Seventh Form: Setting Sun Transformation","color": "red"}
 execute if score @s[scores={ds_swap=6..}] ds_sunform matches 8 run tellraw @s {"text": "Eighth Form: Solar Heat Haze","color": "red"}
 execute if score @s[scores={ds_swap=6..}] ds_sunform matches 9 run tellraw @s {"text": "Ninth Form: Beneficient Radiance","color": "red"}
@@ -43,6 +43,10 @@ execute if predicate core:click if score @s[scores={stamina=25..,ds_cooldown=0}]
 execute if predicate core:click if score @s[scores={stamina=..15,ds_cooldown=0}] ds_sunform matches 5 run tellraw @s "Too Tired"
 execute if predicate core:click if score @s[scores={stamina=16..,ds_cooldown=0}] ds_sunform matches 5 run function demonslayer:breathing/sun/thrust/init
 
+execute if predicate core:click if score @s[scores={stamina=..20,ds_cooldown=0}] ds_sunform matches 6 run tellraw @s "Too Tired"
+execute if predicate core:click if score @s[scores={stamina=21..,ds_cooldown=0}] ds_sunform matches 6 run function demonslayer:breathing/sun/fake_rainbow/init
+
+
 execute if predicate core:click if score @s[scores={stamina=..10,ds_cooldown=0}] ds_sunform matches 7 run tellraw @s "Too Tired"
 execute if predicate core:click if score @s[scores={stamina=11..,ds_cooldown=0},nbt={OnGround:1b}] ds_sunform matches 7 run function demonslayer:breathing/sun/setting_sun/init
 
@@ -61,7 +65,7 @@ execute as @s[scores={ds_sunform=2,ds_formtime=1..}] at @s run function demonsla
 execute as @s[scores={ds_sunform=3,ds_formtime=1..}] at @s run function demonslayer:breathing/sun/2nd_ragingsun/main
 execute as @s[scores={ds_sunform=4,ds_formtime=1..}] at @s run function demonslayer:breathing/sun/burning_bones/main
 execute as @s[scores={ds_sunform=5,ds_formtime=1..}] at @s run function demonslayer:breathing/sun/thrust/main
-
+execute as @s[scores={ds_sunform=6,ds_formtime=1..}] at @s run function demonslayer:breathing/sun/fake_rainbow/main
 execute as @s[scores={ds_sunform=7,ds_formtime=1..}] at @s run function demonslayer:breathing/sun/setting_sun/main
 
 execute as @s[scores={ds_sunform=9,ds_formtime=1..}] at @s run function demonslayer:breathing/sun/radiance/main

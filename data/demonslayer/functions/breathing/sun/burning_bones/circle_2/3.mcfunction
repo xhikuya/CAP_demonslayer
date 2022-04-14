@@ -1,11 +1,7 @@
-execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~-70 run particle flame ^ ^ ^1.5
-execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~-80 run particle flame ^ ^ ^1.5
-execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~-90 run particle flame ^ ^ ^1.5
-execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~-100 run particle flame ^ ^ ^1.5
-execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~-110 run particle flame ^ ^ ^1.5
-execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~-120 run particle flame ^ ^ ^1.5
-execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~-130 run particle flame ^ ^ ^1.5
-execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~-140 run particle flame ^ ^ ^1.5
+execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~50 run function demonslayer:breathing/sun/burning_bones/circle_2/particle
+execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~40 run function demonslayer:breathing/sun/burning_bones/circle_2/particle
+execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~30 run function demonslayer:breathing/sun/burning_bones/circle_2/particle
+execute positioned ~ ~1 ~ rotated ~90 0 rotated ~ ~20 run function demonslayer:breathing/sun/burning_bones/circle_2/particle
 
 
 playsound entity.blaze.shoot player @a ~ ~ ~
