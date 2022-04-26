@@ -1,0 +1,26 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate":{
+                "nbt": "{Tags:[\"custom\"]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate":{
+                "nbt": "{Tags:[\"ds_proj\"]}"
+            }
+        },
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate":{
+                "nbt": "{Tags:[\"ds_hitbox\"]}"
+            }
+        }
+    ]
+}
