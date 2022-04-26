@@ -3,6 +3,8 @@ execute if data entity @s SelectedItem.tag{Cap:{ID:2b}} at @s run function demon
 execute if data entity @s SelectedItem.tag{Cap:{ID:3b}} at @s run function demonslayer:demon/bda/yahaba/main
 execute if data entity @s SelectedItem.tag{Cap:{ID:4b}} at @s run function demonslayer:demon/bda/basic/main
 execute if data entity @s SelectedItem.tag{Cap:{ID:5b}} at @s run function demonslayer:demon/bda/temari/main
+execute if data entity @s SelectedItem.tag{Cap:{ID:6b}} at @s run function demonslayer:demon/bda/compass/main
+
 execute unless predicate core:macro run function demonslayer:breathing/essentials/moving_back
 execute if predicate core:macro run function demonslayer:breathing/essentials/moving_back2
 

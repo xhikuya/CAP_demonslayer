@@ -8,8 +8,8 @@ particle end_rod ^ ^1 ^4 0.1 0.1 0.1 0.01 10 normal
 
 function demonslayer:breathing/sun/dmg
 tag @s add immune
-execute positioned ^ ^1 ^2 positioned ~-.6 ~-.5 ~-.6 as @e[dx=1.2,dz=1.2,dy=1,tag=!immune] run scoreboard players operation @s dmg = #ds:temp var1
-execute positioned ^ ^1 ^3 positioned ~-.6 ~-.5 ~-.6 as @e[dx=1.2,dz=1.2,dy=1,tag=!immune] run scoreboard players operation @s dmg = #ds:temp var1
-execute positioned ^ ^1 ^4 positioned ~-.6 ~-.5 ~-.6 as @e[dx=1.2,dz=1.2,dy=1,tag=!immune] run scoreboard players operation @s dmg = #ds:temp var1
+execute rotated ~ ~ positioned ^ ^1 ^2 positioned ~-.6 ~-.5 ~-.6 as @e[dx=1.2,dz=1.2,dy=1,tag=!immune] run scoreboard players operation @s dmg = #ds:temp var1
+execute rotated ~ ~-10 positioned ^ ^1 ^3 positioned ~-.6 ~-.5 ~-.6 as @e[dx=1.2,dz=1.2,dy=1,tag=!immune] run scoreboard players operation @s dmg = #ds:temp var1
+execute rotated ~ ~-20 positioned ^ ^2 ^4 positioned ~-.6 ~-.5 ~-.6 as @e[dx=1.2,dz=1.2,dy=1,tag=!immune] run scoreboard players operation @s dmg = #ds:temp var1
 
 tag @s remove immune

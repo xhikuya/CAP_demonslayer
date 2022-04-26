@@ -18,8 +18,9 @@ effect give @s[predicate=demonslayer:no_stam] weakness 1 0 true
 
 execute if score @s[scores={stat_stamina=0}] max_stamina matches 100.. run scoreboard players set @s max_stamina 50
 function demonslayer:slayer/slayer_attributes
-tag @s add cdamage
+execute if entity @e[type=item,nbt={Item:{tag:{Cap:{BDA:0b}}}}] at @s run function demonslayer:demon/bda/random
 
+execute if entity @s[nbt={SelectedItem:{tag:{Cap:{Invitation:1b}}}},predicate=core:click] unless score @s ds_finalselection matches 8.. at @s run function demonslayer:final_selection/enter
 
 execute if entity @s[advancements={demonslayer:defense/45_def=true},predicate=!demonslayer:no_stam] run effect give @s speed 1 0 true
 execute if entity @s[advancements={demonslayer:defense/45_def=true},predicate=!demonslayer:no_stam] run effect give @s jump_boost 1 1 true

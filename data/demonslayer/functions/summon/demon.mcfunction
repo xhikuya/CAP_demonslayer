@@ -5,3 +5,4 @@ execute if entity @p[predicate=demonslayer:strong] if predicate demonslayer:25_c
 execute if predicate demonslayer:10_chance run function demonslayer:summon/demon/yahaba
 execute if predicate demonslayer:10_chance run function demonslayer:summon/demon/susamaru
 tag @e[tag=ds_new] remove ds_new
+tag @s[type=!player] add spawned

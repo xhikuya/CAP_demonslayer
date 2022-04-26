@@ -1,11 +1,11 @@
 kill @e[tag=cap_ds]
 execute unless entity @e[tag=cap_ds] run summon area_effect_cloud ~ ~ ~ {Tags:["cap_ds","addon"],CustomName:'{"text":"Demon Slayer","color": "dark_red"}',Duration:10000}
 scoreboard players set @e[tag=cap_ds] addon 2
-schedule function demonslayer:slayer/advancements_s 10s replace
-schedule function demonslayer:demon/advancements_s 10s replace
+schedule function demonslayer:slayer/advancements_s 4s replace
+schedule function demonslayer:demon/advancements_s 4s replace
 schedule function demonslayer:slayer/clear_sword 2s replace
-schedule function demonslayer:refinery 10s replace
-
+schedule function demonslayer:refinery 4s replace
+forceload add 0 0
 
 schedule function demonslayer:spawn 3s replace
 

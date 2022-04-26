@@ -25,7 +25,7 @@
                                 "predicate": {
                                     "player":{
                                         "advancements": {
-                                            "demonslayer:slayer/water_breathing":true
+                                            "demonslayer:slayer/learn/water_breathing":true
                                         }
                                     }
                                 }
@@ -36,7 +36,7 @@
                                 "predicate": {
                                     "player":{
                                         "advancements": {
-                                            "demonslayer:slayer/insect_breathing":true
+                                            "demonslayer:slayer/learn/insect_breathing":true
                                         }
                                     }
                                 }
