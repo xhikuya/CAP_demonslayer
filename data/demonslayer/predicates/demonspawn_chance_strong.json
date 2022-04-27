@@ -11,5 +11,15 @@
                 "dimension": "demonslayer:final_selection"
             }
         }
+    },
+    {
+        "condition": "location_check",
+        "predicate": {
+            "position": {
+                "y": {
+                    "min":45
+                }
+            }
+        }
     }
 ]
