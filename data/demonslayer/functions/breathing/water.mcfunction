@@ -3,6 +3,7 @@ execute unless entity @s[nbt={Inventory:[{Slot:-106b}]}] run item replace entity
 execute if entity @s[predicate=core:sneak] run scoreboard players add @s ds_swap 1
 execute if score @s ds_swap matches 6.. run scoreboard players add @s[scores={ds_formtime=0}] ds_waterform 1
 scoreboard players set @s[scores={ds_waterform=8..}] ds_waterform 1
+scoreboard players set @s[scores={ds_waterform=1..,stat_control=..4}] ds_waterform 0
 scoreboard players set @s[scores={ds_waterform=2..,stat_control=5..7}] ds_waterform 1
 scoreboard players set @s[scores={ds_waterform=3..,stat_control=8..11}] ds_waterform 1
 scoreboard players set @s[scores={ds_waterform=4..,stat_control=12..14}] ds_waterform 1

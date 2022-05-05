@@ -1,5 +1,5 @@
 execute if entity @s[nbt={SelectedItem:{tag:{Cap:{Nichirin:1b}}}}] at @s run function demonslayer:breathing/nichirin
-execute if entity @s[scores={stat_control=4..},predicate=demonslayer:breathing/water,predicate=!demonslayer:breathing/sun,predicate=!demonslayer:breathing/tanjiro] at @s run function demonslayer:breathing/water
+execute if entity @s[predicate=demonslayer:breathing/water,predicate=!demonslayer:breathing/sun,predicate=!demonslayer:breathing/tanjiro] at @s run function demonslayer:breathing/water
 execute if entity @s[scores={stat_control=6..},predicate=demonslayer:breathing/sun,predicate=!demonslayer:breathing/tanjiro] at @s run function demonslayer:breathing/sun
 execute if entity @s[scores={stat_control=6..},predicate=demonslayer:breathing/insect] at @s run function demonslayer:breathing/insect
 execute if entity @s[scores={stat_control=5..}] if data entity @s SelectedItem.tag.Cap.Thunderbreathing at @s run function demonslayer:breathing/thunder
@@ -17,6 +17,8 @@ execute as @s if predicate core:dmg run function demonslayer:dmg_reduction
 
 scoreboard players add @s ds_formtime 0
 scoreboard players remove @s[scores={ds_formtime=1..}] ds_formtime 1
+scoreboard players add @s ds_backstep 0
+scoreboard players remove @s[scores={ds_backstep=1..}] ds_backstep 1
 scoreboard players add @s ds_lhit 0
 scoreboard players remove @s[scores={ds_lhit=1..}] ds_lhit 1
 scoreboard players add @s ds_cooldown 0
