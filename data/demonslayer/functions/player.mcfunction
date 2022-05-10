@@ -4,8 +4,11 @@ execute if entity @s[scores={stat_control=6..},predicate=demonslayer:breathing/i
 execute if entity @s[scores={stat_control=5..}] if data entity @s SelectedItem.tag.Cap.Thunderbreathing at @s run function demonslayer:breathing/thunder
 execute if entity @s[scores={stat_control=6..},predicate=demonslayer:breathing/tanjiro] at @s run function demonslayer:breathing/tanjiro
 
+
 execute if entity @s[nbt={SelectedItem:{tag:{Cap:{Nichirin:1b}}}}] at @s run function demonslayer:breathing/nichirin
 execute if entity @s[nbt={SelectedItem:{tag:{Cap:{Bamboo:1b}}}}] at @s run function demonslayer:breathing/bamboo/main
+execute if predicate core:macro if predicate core:shift_click run scoreboard players set @s ds_swap 10
+execute if predicate core:macro if predicate core:shift_click run scoreboard players set @s s_click 0
 
 execute if entity @s[tag=health_see] at @s run function demonslayer:health_watch
 

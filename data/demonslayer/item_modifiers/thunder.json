@@ -1,0 +1,26 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            {
+                "text": "Thunder Breathing",
+                "color": "yellow",
+                "italic": false,
+                "underlined": true
+            }
+        ],
+        "replace": false
+    },
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{Cap:{Thunderbreathing:3b}}"
+    },
+    {
+        "function": "set_enchantments",
+        "add": true,
+        "enchantments": {
+            "sharpness":1
+        }
+    }
+]

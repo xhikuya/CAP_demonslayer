@@ -14,5 +14,3 @@ execute if entity @s[nbt={OnGround:0b},scores={ds_formtime=3..4}] run scoreboard
 execute if score @s ds_formtime matches 1..2 run function demonslayer:breathing/thunder/zenitsu/original/thunderclap_boom
 execute if score @s ds_formtime matches 1..2 run function demonslayer:breathing/thunder/zenitsu/original/thunderclap_boom
 execute if score @s ds_formtime matches 1..2 run function demonslayer:breathing/thunder/zenitsu/original/thunderclap_boom
-execute if score @s ds_formtime matches 1..2 run function demonslayer:breathing/thunder/zenitsu/original/thunderclap_boom
-execute if score @s ds_formtime matches 1..2 run function demonslayer:breathing/thunder/zenitsu/original/thunderclap_boom
