@@ -1,7 +1,7 @@
 [
     {
         "condition": "minecraft:random_chance",
-        "chance": 0.45
+        "chance": 0.5
     },
     {
         "condition": "inverted",

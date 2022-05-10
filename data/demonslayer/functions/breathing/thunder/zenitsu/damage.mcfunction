@@ -1,4 +1,4 @@
-execute store result score #ds:temp var1 run attribute @s generic.attack_damage get 8
+execute store result score #ds:temp var1 run attribute @s generic.attack_damage get 10
 scoreboard players set #ds:temp var2 3
 execute store result score #ds:temp var3 run scoreboard players get @s stat_power
 scoreboard players operation #ds:temp var3 /= #ds:temp var2

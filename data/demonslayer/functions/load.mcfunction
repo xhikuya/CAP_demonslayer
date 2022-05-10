@@ -29,6 +29,8 @@ scoreboard objectives add ds_motx2 dummy
 scoreboard objectives add ds_motz2 dummy
 scoreboard objectives add ds_backstep dummy
 scoreboard objectives add backstep_macro trigger
+scoreboard objectives add demonslayer_mark trigger
+scoreboard objectives add mark_time dummy
 
 
 scoreboard objectives add ds_cooldown dummy
