@@ -5,7 +5,7 @@ execute unless entity @e[tag=ds_hithis] run summon skeleton ~ ~-9 ~ {Tags:["ds_h
 #execute anchored eyes unless entity @e[tag=ds_hitbox] run summon chicken ^ ^ ^1.4 {Tags:["ds_hitbox","ds_hithis"],ActiveEffects:[{Id:11b,Duration:100000,Amplifier:10,ShowParticles:0b}],Team:"ds_collide",Silent:1b,DeathLootTable:"minecraft:empty",IsChickenJockey:1b,NoGravity:1b}
 data merge entity @e[tag=ds_hithis,limit=1] {Fire:0s}
 execute as @s at @s anchored eyes as @e[tag=ds_hithis] run tp @s ^ ^-.5 ^1.4
-execute as @s[predicate=core:sprint] at @s anchored eyes as @e[tag=ds_hithis] run tp @s ^ ^-.5 ^1.4
+execute as @s[predicate=core:sprint] at @s anchored eyes as @e[tag=ds_hithis] run tp @s ^ ^-.5 ^1.85
 
 #execute as @s at @s unless entity @s[nbt={OnGround:1b}] positioned ~ ~1 ~ anchored eyes as @e[tag=ds_hithis] run tp @s ^ ^ ^1
 #say hu

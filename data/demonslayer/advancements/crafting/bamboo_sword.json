@@ -8,6 +8,6 @@
         }
     },
     "rewards": {
-        "function": "demonslayer:slayer/give_bamboo"
+        "function": "demonslayer:slayer/give/bamboo"
     }
 }

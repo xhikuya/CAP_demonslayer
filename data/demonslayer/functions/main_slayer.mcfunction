@@ -1,4 +1,8 @@
 execute if entity @s[predicate=core:atked,predicate=demonslayer:sword] run scoreboard players add @s xp_control 2
+execute if entity @s[predicate=core:atked,predicate=demonslayer:sword_bamboo] run scoreboard players add @s xp_control 1
+execute if entity @s[predicate=demonslayer:sword_bamboo,nbt={HurtTime:9s}] run scoreboard players add @s xp_def 2
+
+
 execute if entity @s[predicate=demonslayer:sword,nbt={HurtTime:9s}] run scoreboard players add @s xp_def 2
 execute if entity @s[predicate=demonslayer:sword,scores={hurt=50..}] run scoreboard players add @s xp_def 10
 execute if entity @s[predicate=demonslayer:sword,scores={hurt=90..}] run scoreboard players add @s xp_def 10

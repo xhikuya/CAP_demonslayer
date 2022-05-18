@@ -1,3 +1,6 @@
+execute if predicate core:macro if predicate core:shift_click run scoreboard players set @s ds_swap 10
+execute if predicate core:macro if predicate core:shift_click run scoreboard players set @s s_click 0
+
 execute if entity @s[nbt={SelectedItem:{tag:{Cap:{Nichirin:1b}}}}] at @s run function demonslayer:breathing/nichirin
 execute if entity @s[predicate=demonslayer:breathing/water,predicate=!demonslayer:breathing/sun,predicate=!demonslayer:breathing/tanjiro] at @s run function demonslayer:breathing/water
 execute if entity @s[scores={stat_control=6..},predicate=demonslayer:breathing/sun,predicate=!demonslayer:breathing/tanjiro] at @s run function demonslayer:breathing/sun
@@ -6,7 +9,6 @@ execute if entity @s[scores={stat_control=5..}] if data entity @s SelectedItem.t
 execute if entity @s[scores={stat_control=6..},predicate=demonslayer:breathing/tanjiro] at @s run function demonslayer:breathing/tanjiro
 
 execute if entity @s[nbt={SelectedItem:{tag:{Cap:{Bamboo:1b}}}}] at @s run function demonslayer:breathing/bamboo/main
-
 execute if entity @s[tag=health_see] at @s run function demonslayer:health_watch
 execute if score @s demonslayer_mark matches 1.. unless score @s mark_time matches 1.. at @s run function demonslayer:breathing/nichirin/mark/init
 execute if score @s mark_time matches 1.. if score @s ds_cooldown matches 3.. run scoreboard players remove @s ds_cooldown 3
