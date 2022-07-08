@@ -8,6 +8,7 @@ scoreboard players add @s ds_formtime 0
 scoreboard players add @s var2 0
 scoreboard players add @s var3 0
 scoreboard players add @s var4 1
+scoreboard players add @s var5 1
 scoreboard players add @s ds_ait 0
 scoreboard players add @s[scores={ds_cooldown=0}] var1 1
 scoreboard players remove @s[scores={var3=1..}] var3 1

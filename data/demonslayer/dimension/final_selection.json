@@ -2,7 +2,6 @@
     "type": "demonslayer:final_selection",
     "generator": {
         "type": "minecraft:noise",
-        "seed": -1814868726,
         "settings": "minecraft:overworld",
         "biome_source": {
             "type": "minecraft:fixed",
